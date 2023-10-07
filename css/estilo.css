@@ -2,6 +2,7 @@
     --color-Ppl: #3f65a8ff ;
     --color-Alt: #4e86e8ff;
     --color-Fnt: #03021fff;
+    --color-Rnt: #000000;
 }
 
 a {
@@ -94,7 +95,117 @@ nav ul {
     align-items: center;
     height: 80%;
     max-width: 90%;
+}
+
+/*----------------------------------------Footer-----------------------*/
+
+footer {
+    margin: 0px;
+    background-color: var(--color-Rnt);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: auto;
 
 
+}
 
+.contenedor-footer {
+    display: inline-flex;
+
+}
+
+.seccion-footer {
+    flex: 1;
+    padding: 0 10px;
+
+}
+
+.seccion-footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    
+
+}
+
+.seccion-footer li {
+    list-style: none;
+
+}
+
+.seccion-footer ul a{
+    text-decoration: none;
+    font-size: 0.8em;
+
+}
+
+.seccion-footer li a{
+    text-decoration: none;
+}
+
+.footer-li{
+    font-size: 17px;
+}
+
+.footer-li a {
+    font-weight: bold;
+    color: white;
+    
+}
+
+.footer-li2 a {
+    color:gray;
+    text-decoration: none;
+}
+
+.footer-li2{
+    font-size: 14px;
+}
+
+/*----------------------------------------------*/
+/* estilo contenedor iconos */
+
+.contenedor-iconos{
+
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px;
+    margin: 15px;
+
+}
+
+.iconos{
+    flex: 4;
+    font-size: 200%;
+    padding-left: 40px;
+
+}
+
+.iconos a{
+    color: white;
+}
+
+.logo-proy img{
+    width: 100px;
+}
+
+.boton-arrep ul li{
+    display: inline;
+    margin: 30px;
+    padding-right: 30px;
+}
+
+.boton-arrep a{
+    color: white;
+}
+
+/*------------------------------------------*/
+
+.final-footer{
+    display: flex;
+    justify-content: center;
+}
+
+.copyright{
+   color: white;
+}
 
