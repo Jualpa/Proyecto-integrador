@@ -97,6 +97,30 @@ nav ul {
     max-width: 90%;
 }
 
+/*----------------------------------------Cursos-----------------------*/
+/* Estilos de la sección de cursos */
+.cursos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.curso {
+    width: calc(33.33% - 20px);
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f3f3f3;
+}
+
+.curso img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
 /*----------------------------------------Footer-----------------------*/
 
 footer {
