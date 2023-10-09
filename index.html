@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,106 +8,336 @@
     <link rel="stylesheet" href="css/estilo.css">
     <title>Universo Infinito: Explorando el Cosmos</title>
 </head>
+
 <body>
-    <nav>
-        <div class="Logo">
-            <img src="imagenes/Logo.png" alt="Logotipo">
-            <h1 class="nombre">Universo Infinito: Explorando el Cosmos</h1>
-        </div>
-        <ul>
-            <li><a href="">Cursos</a></li>
-            <li><a href="">Quienes somos</a></li>
-            <li><a href="">Nuestra mentodologia</a></li>
-            <li><a href="">Alumnos</a></li>
-            <li><a href="">Contactanos</a></li>
-        </ul>
-        <button class="menu-hamburguesa" id="menu-hamburguesa">
-            <ion-icon class="barras" name="menu-outline"></ion-icon>
-        </button>
-
-    </nav>
-
-
+    <header class="inicio">
+        <!-- contenedor es una clase que contiene cada parte del codigo -->
+        <nav class="menu contenedor">
+            <div class="menu_logo">
+                <h2 class="menu_titulo">Universo Infinito: Explorando el Cosmos</h2>
+            </div>
+            <ul class="menu_link menu_link_nav">
+                <li class="menu_items">
+                    <a href="#ir_pg_inicio" class="menu_href">Inicio</a>
+                </li>
+                <li class="menu_items">
+                    <a href="#ir_qs" class="menu_href">Quienes somos</a>
+                </li>
+                <li class="menu_items">
+                    <a href="#ir_cursos" class="menu_href">Cursos</a>
+                </li>
+                <li class="menu_items">
+                    <a href="#ir_alumnos" class="menu_href">Alumnos</a>
+                </li>
+                <li class="menu_items">
+                    <a href="" class="menu_href">Noticias</a>
+                </li>
+                <li class="menu_items">
+                    <a href="" class="menu_href">Contacto</a>
+                </li>
+                <!-- Agregar boton cierre -->
+                <img src="" alt="Cerrar menu" class="menu_cerrar">
+            </ul>
+            <div class="menu_hamb">
+                <!-- agregar imagen menu hamburgesa -->
+                <img src="" alt="Menu desplegable" class="nav_img_hamb">
+            </div>
+        </nav>
+        <section id="ir_pg_inicio" class="inicio_contenedor contenedor">
+            <!-- ver como mejorar le h1 visualente -->
+            <h1 class="frase_titulo">Los pensamientos son como las estrellas ardientes, y las ideas estiran el
+                Universo.<br>Criss Jami </h1>
+            <p class="inicio_parrafo">Buscamos llevar la astronomia a quienes entiendan que el espacio es la ultima
+                frontera que debemos que conquistar</p>
+            <!-- <img src="" alt="Flecha para pasar a siguiente bloque" class="bt_next_inicio"> -->
+        </section>
+    </header>
     <main>
+        <section id="ir_qs" class="contenedor quienes_somos">
+            <div class="desc_qs">
+                <h2 class="titulo">Quienes somos?</h2>
+                <p class="desc_qs">Somos estuciastas y profecionales dedicados a la astronomia. Intentamos enseñar y
+                    disfrutar de esta hermosa ciencia con la mayor gente posible. Para ello brindamos cursos, eventos e
+                    informacion de Astronomia para acercar esta hermosa ciencia a todo aquel que disfrute del cielo
+                    nocturno
+                    y las maravillas que se observan dia a dia en el.</p>
+            </div>
 
-        
-        <section class="cursos">
-            <div class="curso">
-                <h2>Curso de Introducción a la Astronomía</h2>
-                <img src="imagenes/curso introduccion .webp" alt="Curso de Astronomía">
-                <p>El curso proporciona una sólida base para explorar los conceptos fundamentales y fenómenos astronómicos
-                </p>
-                <p>Sistema Solar: Planetas, lunas, asteroides, cometas y el Sol, con énfasis en órbitas y características.
-    
-                    Estrellas y Galaxias: Estudio de estrellas, su evolución, y clasificación de galaxias.
-    
-                    Cosmología Básica: Estructura y evolución del universo, incluyendo expansión y radiación cósmica de
-                    fondo.
-    
-                    Observación Astronómica: Técnicas y herramientas, desde observación a simple vista hasta uso de
-                    telescopios y tecnología especializada.
-    
-                    Fenómenos Cósmicos: Eventos como supernovas, agujeros negros y pulsares.</p>
-                <button>Inscribirse</button>
+            <div class="desc_astro">
+                <article class="astronomo">
+                    <img src="imagenes/astronomo.jpeg" alt="Astrónomo 1">
+                    <h3 class="subtitulo">Elara Astrolux</h3>
+                    <p class="parrafo_desc">Elara Astrolux es una astrónoma y educadora nacida en Stella Astra.
+                        Desde niña, mostró gran
+                        interés
+                        en el
+                        cielo nocturno. Tras estudiar astrofísica en la Universidad de Stellarium, destacó al
+                        descubrir
+                        un
+                        sistema solar habitable en Aquarius.
+
+                        Elara fusiona astronomía, biología y geología para buscar vida extraterrestre. Es conocida
+                        por
+                        liderar
+                        misiones a lunas de Júpiter y Saturno. Además, es una apasionada divulgadora científica,
+                        autora
+                        de
+                        libros y presentadora de documentales premiados.
+
+                        Reconocida internacionalmente, Elara Astrolux es un ícono inspirador como científica,
+                        exploradora y
+                        educadora del cosmos.</p>
+                </article>
+
+                <article class="astronomo">
+                    <img src="imagenes/astronomo2.jpeg" alt="Astrónomo 2">
+                    <h3 class="subtitulo">Rafael Estelar</h3>
+                    <p class="parrafo_desc">Rafael Estelar es un distinguido astrónomo y educador originario de Nova
+                        Celestia. Desde
+                        temprana
+                        edad,
+                        mostró una fascinación por los fenómenos astronómicos. Tras graduarse con honores en la
+                        Universidad
+                        Estelar, Rafael se destacó al desarrollar un método innovador para el estudio de estrellas
+                        variables.
+
+                        Como educador, ha formado a numerosos estudiantes en el arte de la observación estelar y la
+                        interpretación de datos astronómicos. Su enfoque pedagógico, centrado en la participación
+                        activa
+                        de
+                        los
+                        estudiantes, ha recibido reconocimientos a nivel nacional.
+
+                        Además de su labor académica, Rafael ha colaborado en misiones de exploración espacial y ha
+                        contribuido
+                        significativamente al desarrollo de telescopios de última generación. Su dedicación a la
+                        educación y
+                        la
+                        investigación lo convierten en un referente en el campo de la astronomía.</p>
+                </article>
+
+                <article class="astronomo">
+                    <img src="imagenes/astronomo 3.jpeg" alt="Astrónomo 3">
+                    <h3 class="subtitulo">Valeria Lunaris</h3>
+                    <p class="parrafo_desc">Valeria Lunaris es una destacada astrónoma y educadora, nacida en
+                        Lunaris, una colonia espacial
+                        en
+                        órbita
+                        alrededor de Saturno. Desde joven, demostró un talento innato para la observación y el
+                        análisis
+                        de
+                        cuerpos celestes.
+
+                        Tras completar sus estudios en la Universidad Galáctica, Valeria se especializó en el
+                        estudio de
+                        asteroides y cometas, realizando importantes descubrimientos sobre su composición y
+                        comportamiento.
+                        Como
+                        educadora, ha desarrollado programas de enseñanza innovadores que integran la tecnología
+                        espacial en
+                        el
+                        aprendizaje.
+
+                        Valeria ha liderado expediciones para estudiar objetos del cinturón de asteroides y cometas
+                        cercanos
+                        a
+                        Júpiter y más allá. Su trabajo ha ampliado nuestro entendimiento sobre la formación del
+                        sistema
+                        solar.
+                        Como defensora de la educación científica, ha inspirado a innumerables jóvenes a explorar el
+                        cosmos.
+                        Su
+                        legado como científica y educadora es una fuente de inspiración para futuras generaciones de
+                        astrónomos
+                        y exploradores del espacio..</p>
+                </article>
+
             </div>
-            <div class="curso">
-                <h2>Curso Avanzado de Astrofísica</h2>
-                <img src="imagenes/curso avanzado.jpeg" alt="Curso de Astrofísica">
-                <p>Nuestro Curso Avanzado de Astrofísica se adentra en los conceptos más complejos y profundos del universo.
-    
-                    Se abordan temas como la física de estrellas y galaxias, la cosmología avanzada, la formación y
-                    evolución de estructuras cósmicas, así como la teoría de la relatividad y la mecánica cuántica aplicada
-                    a la astronomía. También se profundiza en fenómenos extremos como agujeros negros, supernovas y la
-                    naturaleza de la materia oscura y energía oscura. Este curso está diseñado para estudiantes con un
-                    conocimiento sólido en astronomía y física, y busca proporcionar una comprensión profunda de los
-                    procesos y fenómenos que rigen el universo a escalas cósmicas.</p>
-                <button>Inscribirse</button>
-            </div>
+
+
+
+        </section>
+
+        <section id="ir_cursos" class="cursos contenedor">
+            <h2 class="titulo">Nuestra oferta de cursos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia optio sapiente at magni delectus
+                cumque odio natus dolores numquam repudiandae aperiam corrupti nostrum deserunt consequuntur impedit,
+                iure, hic nemo itaque.</p>
+            <article class="tarjeta">
+                <div class="curso_info">
+                    <h3 class="subtitulo">Curso de Introducción a la Astronomía</h3>
+                    <img src="imagenes/curso intruduccion .webp" alt="Curso de Astronomía">
+                    <p class="parrafo_desc">El curso proporciona una sólida base para explorar los conceptos
+                        fundamentales y fenómenos
+                        astronómicos
+                    </p>
+                    <p>Sistema Solar: Planetas, lunas, asteroides, cometas y el Sol, con énfasis en órbitas y
+                        características.
+
+                        Estrellas y Galaxias: Estudio de estrellas, su evolución, y clasificación de galaxias.
+
+                        Cosmología Básica: Estructura y evolución del universo, incluyendo expansión y radiación cósmica
+                        de
+                        fondo.
+
+                        Observación Astronómica: Técnicas y herramientas, desde observación a simple vista hasta uso de
+                        telescopios y tecnología especializada.
+
+                        Fenómenos Cósmicos: Eventos como supernovas, agujeros negros y pulsares.</p>
+
+                </div>
+                <a href="" class="boton">Inscribirse</a>
+            </article>
+            <article class="tarjeta">
+                <div class="curso_info">
+                    <h3 class="subtitulo">Curso Avanzado de Astrofísica</h3>
+                    <img src="imagenes/curso avanzado.jpeg" alt="Curso de Astrofísica">
+                    <p>Nuestro Curso Avanzado de Astrofísica se adentra en los conceptos más complejos y profundos del
+                        universo.
+                        Se abordan temas como la física de estrellas y galaxias, la cosmología avanzada, la formación y
+                        evolución de estructuras cósmicas, así como la teoría de la relatividad y la mecánica cuántica
+                        aplicada
+                        a la astronomía. También se profundiza en fenómenos extremos como agujeros negros, supernovas y
+                        la
+                        naturaleza de la materia oscura y energía oscura. Este curso está diseñado para estudiantes con
+                        un
+                        conocimiento sólido en astronomía y física, y busca proporcionar una comprensión profunda de los
+                        procesos y fenómenos que rigen el universo a escalas cósmicas.</p>
+                </div>
+                <a href="" class="boton">Inscribirse</a>
+            </article>
             <!-- Aca podemos agragar mas cursos sin es necesario -->
         </section>
 
-        <article>
-            <div class="imagenes-texto">
-                <div class="image-1"><img src="imagenes/astronomy-Milky-Way-nature-road-1212377-wallhere.com.jpg"
-                        alt="Imagen Astronomia"></div>
-                <div class="text-1">
-                    <h2 class="subtitulo">Probando titulo</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil cum reprehenderit ut, debitis nam
-                        at labore nisi doloribus laudantium aut accusantium quod corrupti exercitationem qui provident
-                        cupiditate temporibus repellat quis ab eveniet, ad veniam. Beatae recusandae totam iure ratione
-                        repellat!</p>
+        <section id="ir_alumnos" class="alumnos contenedor">
+            <h2 class="titulo">Que dicen nuestros alumnos de nosotros</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia optio sapiente at magni delectus
+                cumque odio natus dolores numquam repudiandae aperiam corrupti nostrum deserunt consequuntur impedit,
+                iure, hic nemo itaque.</p>
 
+            <article class="alum_portada">
+                <img src="imagenes/astronomo.jpeg" alt="Rostro Alumno">
+                <h3 class="subtitulo">Anacleta Star</h3>
+                <div class="opinion">
+                    <p class="parrafo_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit natus
+                        recusandae, perferendis ullam excepturi ex! Sequi veritatis fugiat dolorem consectetur, cum unde
+                        porro totam illum iure, optio incidunt voluptates voluptatem!</p>
                 </div>
-            </div>
-        </article>
+            </article>
 
-        <article>
-            <div class="imagenes-texto">
-                <div class="text-1">
-                    <h2 class="subtitulo">Probando titulo</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil cum reprehenderit ut, debitis nam
-                        at labore nisi doloribus laudantium aut accusantium quod corrupti exercitationem qui provident
-                        cupiditate temporibus repellat quis ab eveniet, ad veniam. Beatae recusandae totam iure ratione
-                        repellat!</p>
+            <article class="alum_portada">
+                <img src="imagenes/astronomo.jpeg" alt="Rostro Alumno">
+                <h3 class="subtitulo">Anacleta Star</h3>
+                <div class="opinion">
+                    <p class="parrafo_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit natus
+                        recusandae, perferendis ullam excepturi ex! Sequi veritatis fugiat dolorem consectetur, cum unde
+                        porro totam illum iure, optio incidunt voluptates voluptatem!</p>
                 </div>
-                <div class="image-1"><img src="imagenes/astronomy-Milky-Way-nature-road-1212377-wallhere.com.jpg"
-                        alt="Imagen Astronomia"></div>
-            </div>
-        </article>
-        <article>
-            <div class="imagenes-texto">
-                <div class="image-1"><img src="imagenes/astronomy-Milky-Way-nature-road-1212377-wallhere.com.jpg"
-                        alt="Imagen Astronomia"></div>
-                <div class="text-1">
-                    <h2 class="subtitulo">Probando titulo</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil cum reprehenderit ut, debitis nam
-                        at labore nisi doloribus laudantium aut accusantium quod corrupti exercitationem qui provident
-                        cupiditate temporibus repellat quis ab eveniet, ad veniam. Beatae recusandae totam iure ratione
-                        repellat!</p>
+            </article>
 
+            <article class="alum_portada">
+                <img src="imagenes/astronomo.jpeg" alt="Rostro Alumno">
+                <h3 class="subtitulo">Anacleta Star</h3>
+                <div class="opinion">
+                    <p class="parrafo_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit natus
+                        recusandae, perferendis ullam excepturi ex! Sequi veritatis fugiat dolorem consectetur, cum unde
+                        porro totam illum iure, optio incidunt voluptates voluptatem!</p>
                 </div>
-            </div>
-        </article>
+            </article>
+
+            <article class="alum_portada">
+                <img src="imagenes/astronomo.jpeg" alt="Rostro Alumno">
+                <h3 class="subtitulo">Anacleta Star</h3>
+                <div class="opinion">
+                    <p class="parrafo_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit natus
+                        recusandae, perferendis ullam excepturi ex! Sequi veritatis fugiat dolorem consectetur, cum unde
+                        porro totam illum iure, optio incidunt voluptates voluptatem!</p>
+                </div>
+            </article>
+
+            <article class="alum_portada">
+                <img src="imagenes/astronomo.jpeg" alt="Rostro Alumno">
+                <h3 class="subtitulo">Anacleta Star</h3>
+                <div class="opinion">
+                    <p class="parrafo_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit natus
+                        recusandae, perferendis ullam excepturi ex! Sequi veritatis fugiat dolorem consectetur, cum unde
+                        porro totam illum iure, optio incidunt voluptates voluptatem!</p>
+                </div>
+            </article>
+
+            <article class="alum_portada">
+                <img src="imagenes/astronomo.jpeg" alt="Rostro Alumno">
+                <h3 class="subtitulo">Anacleta Star</h3>
+                <div class="opinion">
+                    <p class="parrafo_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit natus
+                        recusandae, perferendis ullam excepturi ex! Sequi veritatis fugiat dolorem consectetur, cum unde
+                        porro totam illum iure, optio incidunt voluptates voluptatem!</p>
+                </div>
+            </article>
+
+            <article class="alum_portada">
+                <img src="imagenes/astronomo.jpeg" alt="Rostro Alumno">
+                <h3 class="subtitulo">Anacleta Star</h3>
+                <div class="opinion">
+                    <p class="parrafo_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit natus
+                        recusandae, perferendis ullam excepturi ex! Sequi veritatis fugiat dolorem consectetur, cum unde
+                        porro totam illum iure, optio incidunt voluptates voluptatem!</p>
+                </div>
+            </article>
+
+            <article class="alum_portada">
+                <img src="imagenes/astronomo.jpeg" alt="Rostro Alumno">
+                <h3 class="subtitulo">Anacleta Star</h3>
+                <div class="opinion">
+                    <p class="parrafo_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit natus
+                        recusandae, perferendis ullam excepturi ex! Sequi veritatis fugiat dolorem consectetur, cum unde
+                        porro totam illum iure, optio incidunt voluptates voluptatem!</p>
+                </div>
+            </article>
+
+            <article class="alum_portada">
+                <img src="imagenes/astronomo.jpeg" alt="Rostro Alumno">
+                <h3 class="subtitulo">Anacleta Star</h3>
+                <div class="opinion">
+                    <p class="parrafo_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit natus
+                        recusandae, perferendis ullam excepturi ex! Sequi veritatis fugiat dolorem consectetur, cum unde
+                        porro totam illum iure, optio incidunt voluptates voluptatem!</p>
+                </div>
+            </article>
+
+            <article class="alum_portada">
+                <img src="imagenes/astronomo.jpeg" alt="Rostro Alumno">
+                <h3 class="subtitulo">Anacleta Star</h3>
+                <div class="opinion">
+                    <p class="parrafo_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit natus
+                        recusandae, perferendis ullam excepturi ex! Sequi veritatis fugiat dolorem consectetur, cum unde
+                        porro totam illum iure, optio incidunt voluptates voluptatem!</p>
+                </div>
+            </article>
+
+            <article class="alum_portada">
+                <img src="imagenes/astronomo.jpeg" alt="Rostro Alumno">
+                <h3 class="subtitulo">Anacleta Star</h3>
+                <div class="opinion">
+                    <p class="parrafo_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit natus
+                        recusandae, perferendis ullam excepturi ex! Sequi veritatis fugiat dolorem consectetur, cum unde
+                        porro totam illum iure, optio incidunt voluptates voluptatem!</p>
+                </div>
+            </article>
+
+            <article class="alum_portada">
+                <img src="imagenes/astronomo.jpeg" alt="Rostro Alumno">
+                <h3 class="subtitulo">Anacleta Star</h3>
+                <div class="opinion">
+                    <p class="parrafo_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit natus
+                        recusandae, perferendis ullam excepturi ex! Sequi veritatis fugiat dolorem consectetur, cum unde
+                        porro totam illum iure, optio incidunt voluptates voluptatem!</p>
+                </div>
+            </article>
+
+        </section>
+
+
     </main>
 
     <footer>
@@ -138,12 +369,7 @@
                     <li class="footer-li2"><a href="">Lorem ipsum dolor sit amet.</a></li>
                 </ul>
             </div>
-            
-
-           
-
         </div>
-
 
 
         <div class="contenedor-footer">
@@ -155,7 +381,6 @@
                     <li class="footer-li2"><a href="">Lorem ipsum dolor sit amet.</a></li>
                 </ul>
             </div>
-
             <div class="seccion-footer">
                 <ul>
                     <li class="footer-li"><a href="">Propuesta</a></li>
@@ -163,19 +388,16 @@
                     <li class="footer-li2"><a href="">Lorem ipsum dolor sit amet.</a></li>
                     <li class="footer-li2"><a href="">Lorem ipsum dolor sit amet.</a></li>
                 </ul>
-            </div> 
-
+            </div>
         </div>
 
         <hr>
-            
         <div class="contenedor-iconos">
-             
             <div class="iconos">
                 <a href="#"><span class="fa-brands fa-twitter" title="Twitter"></span></a>
                 <a href="#"><span class="fa-brands fa-facebook" title="Facebook"></span></a>
                 <a href="#"><span class="fa-brands fa-instagram" title="Instagram"></span></a>
-                <a href="#"><span class="fa-brands fa-linkedin" title="Linkedin"></span></a>   
+                <a href="#"><span class="fa-brands fa-linkedin" title="Linkedin"></span></a>
                 <a href="#"><span class="fa-brands fa-whatsapp" title="Whatsapp"></span></a>
                 <a href="#"><span class="fa-brands fa-youtube" title="Youtube"></span></a>
             </div>
@@ -184,20 +406,20 @@
                 <ul>
                     <li><a href="">Términos y Condiciones</a></li>
                     <li><a href="">Botón de Arrepentimiento</a></li>
-                </ul>    
+                </ul>
             </div>
         </div>
 
         <hr>
-    
+
         <div class="final-footer">
-            <div class="copyright"> 
+            <div class="copyright">
                 <p>Universo Infinito: Explorando el cosmos &#9400</p>
             </div>
         </div>
 
     </footer>
 
-    
 </body>
+
 </html>
