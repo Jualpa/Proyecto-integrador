@@ -5,24 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/14624a266b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="./css/estilo.css">
     <title>Universo Infinito: Explorando el Cosmos</title>
 </head>
 
 <body>
     <header class="inicio">
         <!-- contenedor es una clase que contiene cada parte del codigo -->
-        <nav class="menu contenedor">
+        <!-- <input type="checkbox" id="ver_menu_hamb" class="ver_menu_hamb"> -->
+        <nav class="menu">
             <div class="menu_logo">
-                <img src="./Imagenes/Logo.png" alt="">
+                <img src="./Imagenes/Logo.png" alt="" class="logo_ppl">
                 <h2 class="menu_titulo">Universo Infinito: Explorando el Cosmos</h2>
             </div>
-            <ul class="menu_link menu_link_nav">
+            <input type="checkbox" id="ver_menu_hamb" class="ver_menu_hamb">
+            <ul class="menu_link">
                 <li class="menu_items">
                     <a href="#ir_pg_inicio" class="menu_href">Inicio</a>
                 </li>
                 <li class="menu_items">
-                    <a href="#ir_qs" class="menu_href">Quienes somos</a>
+                    <a href="#ir_qs" class="menu_href">Quienes somos?</a>
                 </li>
                 <li class="menu_items">
                     <a href="#ir_cursos" class="menu_href">Cursos</a>
@@ -36,12 +38,17 @@
                 <li class="menu_items">
                     <a href="" class="menu_href">Contacto</a>
                 </li>
-                <!-- Agregar boton cierre -->
-                <img src="" alt="Cerrar menu" class="menu_cerrar">
             </ul>
             <div class="menu_hamb">
-                <!-- agregar imagen menu hamburgesa -->
-                <img src="" alt="Menu desplegable" class="nav_img_hamb">
+                <label for="ver_menu_hamb">
+                    <i class="fa-solid fa-bars av_img_hamb"></i>
+                </label>
+            </div>
+            <!-- cerrar menu -->
+            <div class="menu_cerrar">
+                <label for="ver_menu_hamb">
+                    <i class="fa-solid fa-xmark av_img_hamb"></i>
+                </label>
             </div>
         </nav>
         <section id="ir_pg_inicio" class="inicio_contenedor contenedor">
@@ -338,7 +345,7 @@
 
         </section>
 
-<!-- --------------------- Carrusel animado con textos ------------------- -->
+        <!-- --------------------- Carrusel animado con textos ------------------- -->
         <section class="contenedor">
             <div class="carrucel_cont">
                 <ul>
@@ -346,27 +353,35 @@
                         <img src="./Imagenes/s1.jpg" alt="">
                         <div class="texto_filmina">
                             <h2>Prueba slider 1</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem corporis, a vel quis quasi sed ad commodi possimus, ab reprehenderit tempora molestiae vitae, tempore ratione eligendi iure enim. Dolore, accusamus.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem corporis, a vel quis quasi
+                                sed ad commodi possimus, ab reprehenderit tempora molestiae vitae, tempore ratione
+                                eligendi iure enim. Dolore, accusamus.</p>
                             <button>ir a cursos</button>
                         </div>
-                    </li>                    <li>
+                    </li>
+                    <li>
                         <img src="./Imagenes/s2.jpg" alt="">
                         <div class="texto_filmina">
                             <h2>Prueba slider21</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem corporis, a vel quis quasi sed ad commodi possimus, ab reprehenderit tempora molestiae vitae, tempore ratione eligendi iure enim. Dolore, accusamus.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem corporis, a vel quis quasi
+                                sed ad commodi possimus, ab reprehenderit tempora molestiae vitae, tempore ratione
+                                eligendi iure enim. Dolore, accusamus.</p>
                         </div>
-                    </li>                    <li>
+                    </li>
+                    <li>
                         <img src="./Imagenes/s3.jpg" alt="">
                         <div class="texto_filmina">
                             <h2>Prueba slider 3</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem corporis, a vel quis quasi sed ad commodi possimus, ab reprehenderit tempora molestiae vitae, tempore ratione eligendi iure enim. Dolore, accusamus.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem corporis, a vel quis quasi
+                                sed ad commodi possimus, ab reprehenderit tempora molestiae vitae, tempore ratione
+                                eligendi iure enim. Dolore, accusamus.</p>
                         </div>
                     </li>
                 </ul>
             </div>
         </section>
 
-<!-- --------------------- Carrusel con imagenes seleccionables ------------------- -->
+        <!-- --------------------- Carrusel con imagenes seleccionables ------------------- -->
         <section class="slider">
             <div class="slider-container">
                 <div class="hojas">

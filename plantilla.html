@@ -12,19 +12,21 @@
 </head>
 
 <body>
-    <header class="inicio_gen">
+    <header class="inicio">
         <!-- contenedor es una clase que contiene cada parte del codigo -->
-        <nav class="menu contenedor">
+        <!-- <input type="checkbox" id="ver_menu_hamb" class="ver_menu_hamb"> -->
+        <nav class="menu">
             <div class="menu_logo">
-                <img src="./Imagenes/Logo.png" alt="">
+                <img src="./Imagenes/Logo.png" alt="" class="logo_ppl">
                 <h2 class="menu_titulo">Universo Infinito: Explorando el Cosmos</h2>
             </div>
-            <ul class="menu_link menu_link_nav">
+            <input type="checkbox" id="ver_menu_hamb" class="ver_menu_hamb">
+            <ul class="menu_link">
                 <li class="menu_items">
-                    <a href="./index.html" class="menu_href">Inicio</a>
+                    <a href="#ir_pg_inicio" class="menu_href">Inicio</a>
                 </li>
                 <li class="menu_items">
-                    <a href="#ir_qs" class="menu_href">Quienes somos</a>
+                    <a href="#ir_qs" class="menu_href">Quienes somos?</a>
                 </li>
                 <li class="menu_items">
                     <a href="#ir_cursos" class="menu_href">Cursos</a>
@@ -38,15 +40,20 @@
                 <li class="menu_items">
                     <a href="" class="menu_href">Contacto</a>
                 </li>
-                <!-- Agregar boton cierre -->
-                <img src="" alt="Cerrar menu" class="menu_cerrar">
             </ul>
             <div class="menu_hamb">
-                <!-- agregar imagen menu hamburgesa -->
-                <img src="" alt="Menu desplegable" class="nav_img_hamb">
+                <label for="ver_menu_hamb">
+                    <i class="fa-solid fa-bars av_img_hamb"></i>
+                </label>
+            </div>
+            <!-- cerrar menu -->
+            <div class="menu_cerrar">
+                <label for="ver_menu_hamb">
+                    <i class="fa-solid fa-xmark av_img_hamb"></i>
+                </label>
             </div>
         </nav>
-    </header>
+    </header> 
 
 
     <main>
