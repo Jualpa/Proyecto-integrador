@@ -205,11 +205,6 @@ html {
 
 .desc_qs {
     padding-bottom: 20px;
-    
-}
-
-.desc_qs .titulo {
-    text-align: center;  
 }
 
 .desc_astro {
@@ -251,48 +246,138 @@ html {
 
 /* ----- */
 
-
-/* Seccion Cursos  */
-
-
-.cursos {
-    --padding-cont: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    text-align: center;
-
+/* -------------Seccion Cursos con imagenes  -------------------------------------- */
+/*----------cursos---*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
 }
 
-
-.tarjeta {
-    width: calc(33.33% - 20px);
-    margin: 50px 30px;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
-    border: 1px solid #ccc;
+    
+}
+
+/* Estilos para el título */
+
+.subtite {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+/* Estilos para los cursos */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+/* Estilos para el título */
+
+.subtite {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+/* Estilos para los cursos */
+
+.projects__grid {
+    display: grid;
+    height: 550px;
+    grid-template-areas: "img1 img2 img3 img4"
+;
+    gap: 10px;
+}
+
+
+
+.projects__Item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
     border-radius: 10px;
-    background-color: #f3f3f3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
 }
 
-.curso_info img {
+.projects__img {
     max-width: 100%;
-    height: auto;
-    border-radius: 5px;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
 }
 
-.boton {
+.projects__hover {
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(-100%, -100%);
+    opacity: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+    
+
+}
+
+.projects__hover:hover {
+    opacity: 1;
+}
+
+.projects__title {
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.projects__icon {
+    font-size: 2em;
+}
+
+/*-------responsive desings---------------*/
+@media screen and (max-width: 767px) {
+    .projects__grid {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .projects__Item {
+      width: 100%;
+    }
+  
+    .projects__img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+/*------------Aca finalzia pruebas cursos-------------------*/
+/* probando adcionar en seccion cursos  */
+.estado {
     display: inline-block;
-    background-color: blue;
-    justify-self: center;
-    color: white;
-    text-decoration: none;
+    background-color: #ccc;
     padding: 10px 20px;
     border-radius: 30px;
 }
+/* hasta aca */
 
-.boton:hover {
-    color: rgb(red, green, rgb(0, 255, 38))
-}
 
 /* Seccion Alumnos */
 
@@ -620,8 +705,133 @@ footer {
     color: white;
 }
 
+/*-----------agregado curso 1----------------------*/
 
 
+.curso {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border: 1px solid #cfc0c0;
+    padding: 2%; /* Usa porcentajes para el espacio interior */
+    margin: 2%; /* Usa porcentajes para el espacio exterior */
+    border-radius: 8px;
+  }
+  
+  .curso-info {
+    max-width: 50%; /* Usa porcentajes para el ancho máximo */
+    text-align: center;
+  }
+  
+  .curso-info img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .curso-info h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+  
+  .valoracion {
+    font-size: 1.2em;
+    color: #FFD700;
+    margin-bottom: 10px;
+  }
+.btn-agotado {
+    background-color: #040303;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 1em;
+    cursor: not-allowed;
+    margin-top: 10px;
+}
+
+.curso-detalles {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.detalle {
+    margin-bottom: 20px;
+}
+
+.detalle h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/*-----estrellas de valoracion----------------*/
+.valoracion {
+    font-size: 24px;
+    color: #808080; /* Color gris para las estrellas */
+  }
+  
+  .estrella {
+    display: inline-block;
+  }
+  
+  .puntuacion {
+    font-size: 1.2em;
+    margin-left: 5px;
+  }
+  
+/*-----curso----------------*/
+@media (max-width: 768px) {
+    .curso {
+      flex-direction: column; /* Cambia la dirección de flex a columna */
+    }
+  
+    .curso-info,
+    .curso-detalles {
+      max-width: 100%; /* Usa el ancho máximo en pantallas más pequeñas */
+    }
+  }
+
+/* Seccion Cursos inicio  */
+
+
+.cursos {
+    --padding-cont: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+
+.tarjeta {
+    width: calc(33.33% - 20px);
+    margin: 50px 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f3f3f3;
+}
+
+.curso_info img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.boton {
+    display: inline-block;
+    background-color: blue;
+    justify-self: center;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+.boton:hover {
+    color: rgb(red, green, rgb(0, 255, 38))
+}
 /*-------------------------Contacto---------------------------*/
 
 /*------------------Banner----------------*/
@@ -750,5 +960,4 @@ input[type="reset"] {
         display: block;
     }
   }
-
 
