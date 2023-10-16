@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/14624a266b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <script src="validacion.js"></script> 
+    <title>Universo Infinito: Explorando el Cosmos</title>
+      
+</head>
+
+<body>
+    <header class="inicio">
+        <!-- contenedor es una clase que contiene cada parte del codigo -->
+        <!-- <input type="checkbox" id="ver_menu_hamb" class="ver_menu_hamb"> -->
+        <nav class="menu">
+            <div class="menu_logo">
+                <img src="./Imagenes/Logo.png" alt="" class="logo_ppl">
+                <h2 class="menu_titulo">Universo Infinito: Explorando el Cosmos</h2>
+            </div>
+            <input type="checkbox" id="ver_menu_hamb" class="ver_menu_hamb">
+            <ul class="menu_link">
+                <li class="menu_items">
+                    <a href="index.html" class="menu_href">Inicio</a>
+                </li>
+                <li class="menu_items">
+                    <a href="#ir_qs" class="menu_href">Quienes somos?</a>
+                </li>
+                <li class="menu_items">
+                    <a href="#ir_cursos" class="menu_href">Cursos</a>
+                </li>
+                <li class="menu_items">
+                    <a href="#ir_alumnos" class="menu_href">Alumnos</a>
+                </li>
+                <li class="menu_items">
+                    <a href="" class="menu_href">Noticias</a>
+                </li>
+                <li class="menu_items">
+                    <a href="" class="menu_href">Contacto</a>
+                </li>
+            </ul>
+            <div class="menu_hamb">
+                <label for="ver_menu_hamb">
+                    <i class="fa-solid fa-bars av_img_hamb"></i>
+                </label>
+            </div>
+            <!-- cerrar menu -->
+            <div class="menu_cerrar">
+                <label for="ver_menu_hamb">
+                    <i class="fa-solid fa-xmark av_img_hamb"></i>
+                </label>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+        
+              
+            <!-- <img src="Imagenes/espacio_prueba.jpg" alt="Banner" id="banner"> -->
+    
+            <br>
+
+            <div class="title-contact">
+                <h1>Canal de Ayuda</h1>
+                <h3>¿Necesitas Ayuda? Selecciona la forma en la que podemos atender tu consulta.</h3>
+            </div>
+
+            <div class="contact-form">
+            
+            
+                <div class="contact-info">
+                
+                    <div class="contact-info-cont">
+
+                        <p class="email_title"> <i class="fa-regular fa-envelope fa-lg"></i> Email: <b>contacto@universo-infinito.com.ar </b></p>
+                        <p class="phone_title"> <i class="fa-solid fa-phone fa-lg"></i> Teléfono: <b>(011)-4455-6734</b></p>
+                        <p class="wpp_title"> <i class="fa-brands fa-whatsapp fa-lg"></i> Whatsapp: <b>+5491154367238</b></p>
+                        <p class="map_title"> <i class="fa-solid fa-map fa-lg"></i> Atención por Oficina: <b>Av. Sarmiento s/n 1er Piso, C1425 CABA</b></p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29930.835582731816!2d-58.468206229740936!3d-34.56922532378559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb57475fd5245%3A0x5eefd3cd753143d7!2sPlanetario%20Galileo%20Galilei!5e0!3m2!1ses-419!2sar!4v1697136240541!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
+                </div>    
+
+
+                <div class="form">
+                <form action="procesar.php" method="POST" onsubmit="return validarFormulario()">
+                
+                    <h2>Formulario de Contacto</h2>
+                    <h5>Por favor, complete el formulario y le responderemos a la brevedad.</h5>
+                
+                
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                    <br>
+
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" >
+                    <br>
+                
+                
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" >
+                    <br>
+                
+
+                    <label for="asunto">Asunto:</label>
+                    <select id="asunto" name="asunto">
+                        <option value="pago">No registra mi pago</option>
+                        <option value="arrepentimiento">Me arrepentí de la Compra</option>
+                        <option value="asesor">Solicitar un asesor comercial</option>     
+                    </select>
+                    <br>
+                
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" cols="70"></textarea>
+                    <br>
+                
+
+                    <input type="submit" value="Enviar" id="btn-enviar">
+                    <input type="reset" value="Restablecer">
+                </form>
+                </div>
+            </div>
+
+                    <br>
+                    <br>
+
+            </section>
+
+        </main>
+
+        <footer>
+
+        <div class="contenedor-footer">
+            <div class="seccion-footer">
+                <ul>
+                    <li class="footer-li"><a href="">Sede CABA</a></li>
+                    <li class="footer-li2"><a href="">Lorem ipsum dolor sit amet.</a></li>
+                    <li class="footer-li2"><a href="">Lorem ipsum dolor sit amet.</a></li>
+                    <li class="footer-li2"><a href="">Lorem ipsum dolor sit amet.</a></li>
+                </ul>
+            </div>
+
+            <div class="seccion-footer">
+                <ul>
+                    <li class="footer-li"><a href="">Sede Zona Oeste</a></li>
+                    <li class="footer-li2"><a href="">Lorem ipsum dolor sit amet.</a></li>
+                    <li class="footer-li2"><a href="">Lorem ipsum dolor sit amet.</a></li>
+                    <li class="footer-li2"><a href="">Lorem ipsum dolor sit amet.</a></li>
+                </ul>
+            </div>
+
+            <div class="seccion-footer">
+                <ul>
+                    <li class="footer-li"><a href="">Sede Zona Sur</a></li>
+                    <li class="footer-li2"><a href="">Lorem ipsum dolor sit amet.</a></li>
+                    <li class="footer-li2"><a href="">Lorem ipsum dolor sit amet.</a></li>
+                    <li class="footer-li2"><a href="">Lorem ipsum dolor sit amet.</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="contenedor-footer">
+            <div class="seccion-footer">
+                <ul>
+                    <li class="footer-li"><a href="">Propuesta</a></li>
+                    <li class="footer-li2"><a href="">Lorem ipsum dolor sit amet.</a></li>
+                    <li class="footer-li2"><a href="">Lorem ipsum dolor sit amet.</a></li>
+                    <li class="footer-li2"><a href="">Lorem ipsum dolor sit amet.</a></li>
+                </ul>
+            </div>
+            <div class="seccion-footer">
+                <ul>
+                    <li class="footer-li"><a href="">Propuesta</a></li>
+                    <li class="footer-li2"><a href="">Lorem ipsum dolor sit amet.</a></li>
+                    <li class="footer-li2"><a href="">Lorem ipsum dolor sit amet.</a></li>
+                    <li class="footer-li2"><a href="">Lorem ipsum dolor sit amet.</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+        <div class="contenedor-iconos">
+            <div class="iconos">
+                <a href="#"><span class="fa-brands fa-twitter" title="Twitter"></span></a>
+                <a href="#"><span class="fa-brands fa-facebook" title="Facebook"></span></a>
+                <a href="#"><span class="fa-brands fa-instagram" title="Instagram"></span></a>
+                <a href="#"><span class="fa-brands fa-linkedin" title="Linkedin"></span></a>
+                <a href="#"><span class="fa-brands fa-whatsapp" title="Whatsapp"></span></a>
+                <a href="#"><span class="fa-brands fa-youtube" title="Youtube"></span></a>
+            </div>
+
+            <div class="boton-arrep">
+                <ul>
+                    <li><a href="">Términos y Condiciones</a></li>
+                    <li><a href="">Botón de Arrepentimiento</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="final-footer">
+            <div class="copyright">
+                <p>Universo Infinito: Explorando el cosmos &#9400</p>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
