@@ -7,7 +7,7 @@
     <script src="https://kit.fontawesome.com/14624a266b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/contacto.css">
     <link rel="stylesheet" href="./css/estilo.css">
-    <script src="validacion.js"></script> 
+    
     <title>Universo Infinito: Explorando el Cosmos</title>
       
 </head>
@@ -30,7 +30,7 @@
                     <a href="#ir_qs" class="menu_href">Quienes somos?</a>
                 </li>
                 <li class="menu_items">
-                    <a href="#ir_cursos" class="menu_href">Cursos</a>
+                    <a href="cursos.html" class="menu_href">Cursos</a>
                 </li>
                 <li class="menu_items">
                     <a href="#ir_alumnos" class="menu_href">Alumnos</a>
@@ -39,7 +39,7 @@
                     <a href="" class="menu_href">Noticias</a>
                 </li>
                 <li class="menu_items">
-                    <a href="" class="menu_href">Contacto</a>
+                    <a href="contacto.html" class="menu_href">Contacto</a>
                 </li>
             </ul>
             <div class="menu_hamb">
@@ -58,76 +58,86 @@
     
     <main>
         <section>
-        
-              
-            <!-- <img src="Imagenes/espacio_prueba.jpg" alt="Banner" id="banner"> -->
-    
-            <br>
-
+           
+        <div class="titulo_subt">    
             <div class="title-contact">
                 <h1>Canal de Ayuda</h1>
                 <h3>¿Necesitas Ayuda? Selecciona la forma en la que podemos atender tu consulta.</h3>
             </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
 
             <div class="contact-form">
             
+                <div class="form">
+                    <form action="" method="POST" onsubmit="return validarFormulario()">
+                    
+                        <h2>Formulario de Contacto</h2>
+                        <h5>Por favor, complete el formulario y le responderemos a la brevedad.</h5>
+                    
+                    
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre">
+                        <br>
+    
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" >
+                        <br>
+                    
+                    
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" >
+                        <br>
+                    
+    
+                        <label for="asunto">Asunto:</label>
+                        <select id="asunto" name="asunto">
+                            <option value="consulta">Consulta General</option> 
+                            <option value="pago">No registra mi pago</option>
+                            <option value="arrepentimiento">Me arrepentí de la Compra</option>
+                            <option value="asesor">Solicitar un asesor</option> 
+                               
+                        </select>
+                        <br>
+                    
+    
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" cols="70"></textarea>
+                        <br>
+                    
+    
+                        <input type="submit" value="Enviar" id="btn-enviar">
+                        <input type="reset" value="Restablecer">
+                    </form>
+                    </div>
+            
+            </div>            
+
+            <br>
+            <br>
+            <br>
             
                 <div class="contact-info">
-                
-                    <div class="contact-info-cont">
+                    
+                        <div class="contact-info-cont">
 
-                        <p class="email_title"> <i class="fa-regular fa-envelope fa-lg"></i> Email: <b>contacto@universo-infinito.com.ar </b></p>
-                        <p class="phone_title"> <i class="fa-solid fa-phone fa-lg"></i> Teléfono: <b>(011)-4455-6734</b></p>
-                        <p class="wpp_title"> <i class="fa-brands fa-whatsapp fa-lg"></i> Whatsapp: <b>+5491154367238</b></p>
-                        <p class="map_title"> <i class="fa-solid fa-map fa-lg"></i> Atención por Oficina: <b>Av. Sarmiento s/n 1er Piso, C1425 CABA</b></p>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29930.835582731816!2d-58.468206229740936!3d-34.56922532378559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb57475fd5245%3A0x5eefd3cd753143d7!2sPlanetario%20Galileo%20Galilei!5e0!3m2!1ses-419!2sar!4v1697136240541!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
+                            <h2>Canales de Contacto</h2>
+                            <br>
+                            <h4>Realiza la consulta que necesites por los siguientes medios habilitados:</h4>
+                            <br>
+                            <p class="email_title"> <i class="fa-regular fa-envelope fa-lg"></i> Email:  <b>contacto@universo-infinito.com.ar </b></p>
+                            <p class="phone_title"> <i class="fa-solid fa-phone fa-lg"></i> Teléfono:  <b>(011)-4455-6734</b></p>
+                            <p class="wpp_title"> <i class="fa-brands fa-whatsapp fa-lg"></i> Whatsapp:  <b>+5491154367238</b></p>
+                            <p class="map_title"> <i class="fa-solid fa-map fa-lg"></i> Atención por Oficina:  <b>Av. Sarmiento s/n 1er Piso, C1425 CABA</b></p>
+                            <br>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.363340596206!2d-58.41420072546263!3d-34.56967185569883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb57475fd5245%3A0x5eefd3cd753143d7!2sPlanetario%20Galileo%20Galilei!5e0!3m2!1ses-419!2sar!4v1697585578915!5m2!1ses-419!2sar" width="1400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>    
                 </div>    
 
-
-                <div class="form">
-                <form action="procesar.php" method="POST" onsubmit="return validarFormulario()">
-                
-                    <h2>Formulario de Contacto</h2>
-                    <h5>Por favor, complete el formulario y le responderemos a la brevedad.</h5>
-                
-                
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre">
-                    <br>
-
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" id="apellido" name="apellido" >
-                    <br>
-                
-                
-                    <label for="email">Correo Electrónico:</label>
-                    <input type="email" id="email" name="email" >
-                    <br>
-                
-
-                    <label for="asunto">Asunto:</label>
-                    <select id="asunto" name="asunto">
-                        <option value="pago">No registra mi pago</option>
-                        <option value="arrepentimiento">Me arrepentí de la Compra</option>
-                        <option value="asesor">Solicitar un asesor comercial</option>     
-                    </select>
-                    <br>
-                
-
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="4" cols="70"></textarea>
-                    <br>
-                
-
-                    <input type="submit" value="Enviar" id="btn-enviar">
-                    <input type="reset" value="Restablecer">
-                </form>
-                </div>
-            </div>
-
-                    <br>
-                    <br>
-
+                <script src="validacion.js"></script> 
             </section>
 
         </main>
@@ -212,6 +222,7 @@
 
     </footer>
 
+    
 </body>
 
 </html>

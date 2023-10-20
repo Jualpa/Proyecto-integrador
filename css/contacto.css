@@ -12,14 +12,23 @@
 
 /*-----------Title Contact-----------*/
 
-.title-contact{
-    padding-left: 15px;
-    display: flex;
+.titulo_subt{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: black;
+    color: white;
+    height: 40vh;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
+.title-contact {
+    text-align: center;         
+}
+
+
+
 .title-contact h1{
-    font-size: 250%;
-    
+    font-size: 250%;        
 }
 
 
@@ -27,40 +36,20 @@
 /* ------------------------------------------------ */
 .contact-form {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 5px;
-    /* align-items: center; */
-    
+    align-items: center;
 
-}
-
-.contact-info {
-    text-align: left;
-   
-}
-
-
-.form {
-    text-align: left;
-    /* border: 1px solid #ccc; */
 }
 
 
 /*----------------------------contact-info----------------*/
 
 .contact-info {
-    display: flex;
-    align-content: space-around;
-    align-items: center;
-    gap:.5rem;
-    margin: 0 20px;
-}
-
-.contact-info-cont {
-    display: flex;
-    flex-direction: column;
-    align-items:flex-start;
-    padding-top: 10%;
+    display: grid;
+    place-items: center; 
+    width: 100%; 
+    text-align: center; 
 }
 
 .contact-info-cont iframe {
@@ -68,26 +57,43 @@
 }
 
 
+.contact-info-cont h4{
+    font-size: 86%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 0;
+    
+}
+
+
 /* -------------------Formulario-----------------------------*/
 
 h2 {
-    text-align: left;
+    text-align: center;
+}
+
+h5{
+    text-align: center;
 }
 
 form {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 40px;
-    padding-right: 15%;
-    border-radius: 10px;
+    max-width: 70%;
+    margin: auto;
+    padding: auto;
+    border-radius: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
 
 label {
     display: block;
     margin-top: 10px;
-    font-size: 100%;
-    
+    font-size: 80%;
+
+  
+}
+
+#asunto {
+    width: 102.5%;
 }
 
 input[type="text"],
@@ -101,30 +107,35 @@ textarea {
     margin-top: 5px;
 }
 
+select{
+    font-size: 80%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+
 input[type="submit"],
 input[type="reset"] {
-    background-color: #0074d9;
+    background-color: gray;
     color: #fff;
     padding: 10px 20px;
+    width: 102.5%;
     border: none;
     border-radius: 10px;
     margin-top: 10px;
+    box-sizing: border-box;
+    /* max-width: 160%; */
 }
 
-/*-------------------responsive----------------------*/
+/*-------------------------Hover CTA-----------------*/
 
-/* Todavia no funciona */
+#btn-enviar:hover {
+    background-color: gold; /* Cambia el color de fondo al pasar el cursor */
+    color: #fff; /* Cambia el color del texto al pasar el cursor */
+}
 
-.title-contact, .contact-info, .form {
-    display: inline-block;
-  }
-
-
-
-@media (max-width: 768px) {
-    .title-contact, .contact-info, .form {
-      width: 100%; /* Para que se muestren en una sola columna en pantallas pequeñas */
-        display: block;
-    }
-  }
+input[type="reset"]:hover {
+    background-color: gold; /* Cambia el color de fondo al pasar el cursor */
+    color: #fff; /* Cambia el color del texto al pasar el cursor */
+}
 
