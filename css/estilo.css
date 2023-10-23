@@ -248,6 +248,7 @@ html {
 
 .seccion_izq {
     background-color: white;
+    flex-wrap: wrap-reverse;
 }
 
 .ilustracion{
