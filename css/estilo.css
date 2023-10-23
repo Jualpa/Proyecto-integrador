@@ -16,6 +16,18 @@ html {
     scroll-behavior: smooth;
 }
 
+.subtitulo {
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+.titulo {
+    font-size: 3rem;
+    text-align: center;
+}
+
+
 .contenedor {
     width: 90%;
     /* max-width: 1200px; */
@@ -143,18 +155,30 @@ html {
 }
 
 .inicio_contenedor {
-    max-width: 800px;
+    /* max-width: 800px;
     --padding-cont: 0;
-    display: grid;
-    grid-auto-rows: max-content;
-    align-content: end;
+    /* display: grid;
+    grid-auto-rows: max-content; */
+    /* display: flex; 
+    flex-wrap: wrap;
+    align-content: center;
     gap: 3em;
-    padding-bottom: 100px;
-    text-align: center;
+    padding-bottom: 100px; */
+    display: flex;
+    text-align: center; 
+    align-items: center;
+    height: 60vh;
+
+
+
 }
 
 .frase_titulo {
     font-size: 3rem;
+}
+.nombre_autor {
+    font-size: 2.5rem;
+    font-style: italic;
 }
 
 .inicio_parrafo {
@@ -166,6 +190,7 @@ html {
     .menu_titulo {
         font-size: 1rem;
     }
+
 }
 
 @media screen and (max-width: 920px) {
@@ -182,9 +207,22 @@ html {
         font-size: 1.5rem;
     }
 
+    .nombre_autor {
+        font-size: 1.1rem;
+    }
+
     .inicio_parrafo {
         font-size: .85rem;
     }
+    .titulo{
+        font-size: 1.5rem;
+
+    }
+    .subtitulo{
+        font-size: 1rem;
+    }
+
+
 }
 
 @media screen and (max-width: 560px) {
@@ -192,15 +230,74 @@ html {
         display: none;
     }
 }
+
+/* ---------- Seccion inicial ---------------*/
+
+.seccion_derecha, .seccion_izq  {
+    border: #000000;
+    /* box-sizing: 2px; */
+    background-color: rgba(0, 191, 255, 0.331);
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content:space-around;
+    align-items: center;
+
+}
+
+.seccion_izq {
+    background-color: white;
+}
+
+.ilustracion{
+    margin: 0 auto;
+    width: 35%;
+    min-width: 250px;
+    height: auto;
+    
+}
+
+.texto-ilustracion {
+    width: 40%;
+    min-width: 250px;
+    margin: 0 auto;
+    padding-left: 20px;
+    align-content: center;
+}
+
+.texto-ilustracion h2{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.accionar {
+    padding: 0;
+    margin: 10px 10px 20px;
+    text-align: center;
+    /* background-color: rgba(0, 191, 255, 0.331); */
+}
+
+.accionar a {
+    background-color: blue;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+
+}
+
+.accionar a:hover {
+    color:gold; 
+}
+
+
+
 /* Seccion Nosotros */
 
 .quienes_somos {
     --padding-cont: 0;
     text-align: center;
-}
-
-.titulo {
-    font-size: 3rem;
 }
 
 .desc_qs {
@@ -211,21 +308,22 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap:10px;
 
 }
 
 .astronomo {
     width: 30%;
-    margin: 10px 10px;
-    /* \margen entre profesores */
+    min-width: 250px;
+    margin: 10px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
     text-align: center;
     background-color: #f3f3f3;
     border: 1px solid #ccc;
     border-radius: 10px;
-    padding: 20px;
-    box-sizing: border-box;
-    /* Añadido para incluir el padding en el ancho del elemento */
-    overflow: hidden;
+
 }
 
 .astronomo img {
@@ -235,13 +333,8 @@ html {
     margin-bottom: 10px;
 }
 
-/* Ver de personalizar con esto las tarjetas de los astronomos */
-.subtitulo {
-    font-size: 2rem;
-}
-
 .parrafo_desc {
-    font-size: 1rem;
+    font-size: .9rem;
 }
 
 /* ----- */
@@ -349,6 +442,7 @@ body {
     font-size: 2em;
 }
 
+
 /*-------responsive desings---------------*/
 @media screen and (max-width: 767px) {
     .projects__grid {
@@ -368,7 +462,9 @@ body {
     }
   }
 
-/*------------Aca finalzia pruebas cursos-------------------*/
+
+
+/*------------Aca finalza pruebas cursos-------------------*/
 /* probando adcionar en seccion cursos  */
 .estado {
     display: inline-block;
@@ -379,18 +475,21 @@ body {
 /* hasta aca */
 
 
+
+
+
 /* Seccion Alumnos */
 
 .alumnos {
-    --padding-cont: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 25px;
+    padding-bottom: 50px;
 }
 
 .alumnos .alum_portada {
-    width: 200px;
-    margin: 15px;
+    width: 150px;
     overflow: hidden;
     position: relative;
     justify-items: center;
@@ -401,18 +500,18 @@ body {
 
 .alumnos .alum_portada img {
     width: 100%;
-    /* Se puede cargar maximo de altura imagen */
-
 }
 
 .alumnos .alum_portada .parrafo_desc {
     margin: 0;
     display: flex;
-    ;
     align-items: center;
-    padding: 15px 15px 25px;
+    padding: 15px auto;
     justify-content: space-between;
+    text-align: center;
+    font-size: .7rem;
 }
+
 
 .alumnos .alum_portada .opinion {
     /* color */
@@ -437,10 +536,10 @@ body {
     bottom: 0;
 }
 
-.subtitulo {
-    font-size: 1.5rem;
+.sub_caja {
+    font-size: 1rem;
     text-align: center;
-    margin: 10px;
+    margin: px;
 }
 
 
@@ -454,13 +553,12 @@ body {
     height: auto;
     margin: 50px auto 0;
     overflow: hidden;
-
 }
 
 .carrucel_cont ul {
     display: flex;
     padding: 0;
-    width: 300%;
+    width: 400%;
     animation: presentacion 20s infinite alternate ease-in-out;
 
 }
@@ -495,24 +593,28 @@ body {
         margin-left: 0;
     }
 
-    20% {
+    15% {
         margin-left: 0;
     }
 
-    40% {
+    30% {
+        margin-left: -100%;
+    }
+
+    45% {
         margin-left: -100%;
     }
 
     60% {
-        margin-left: -100%;
-    }
-
-    80% {
         margin-left: -200%;
     }
 
+    75% {
+        margin-left: -200%;
+    }    
+    
     100% {
-        margin-left: -200%;
+        margin-left: -300%;
     }
 }
 
@@ -832,4 +934,5 @@ footer {
 .boton:hover {
     color: rgb(red, green, rgb(0, 255, 38))
 }
+
 
