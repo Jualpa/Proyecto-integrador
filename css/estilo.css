@@ -413,7 +413,7 @@ body {
     top: 100%;
     left: 100%;
     transform: translate(-100%, -100%);
-    opacity: 0;
+    opacity: 1;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -428,13 +428,18 @@ body {
 
 }
 
-.projects__hover:hover {
-    opacity: 1;
+.projects__desc {
+    opacity: 0; /* Inicialmente, el párrafo estará oculto */
+    transition: opacity 0.3s ease;
+}
+
+.projects__Item:hover .projects__desc {
+    opacity: 1; /* Cuando se pasa el mouse sobre el elemento padre, el párrafo aparecerá */
 }
 
 .projects__title {
-    font-size: 25px;
-    margin-bottom: 10px;
+    font-size: 20px;
+    margin-bottom: 5px;
     text-align: center;
     justify-content: center;
 }
@@ -935,5 +940,9 @@ footer {
 .boton:hover {
     color: rgb(red, green, rgb(0, 255, 38))
 }
+
+
+
+
 
 

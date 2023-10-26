@@ -292,7 +292,7 @@ html {
     top: 100%;
     left: 100%;
     transform: translate(-100%, -100%);
-    opacity: 1;
+    opacity: 1 ;
     text-align:center;
     display: flex;
     flex-direction: column;
@@ -309,11 +309,11 @@ html {
 
 
 .projects__desc {
-    opacity: 0; /* Inicialmente, el párrafo estará oculto */
+    opacity: 1; 
     transition: opacity 0.3s ease;}
     
     .projects__desc:hover {
-        opacity: 1;
+        opacity: 0;
     }
 
 /*-------titulos imagenes ---------------*/
@@ -485,8 +485,8 @@ footer {
     justify-content: space-between;
     background-color: #fff;
     border: 1px solid #cfc0c0;
-    padding: 2%; /* Usa porcentajes para el espacio interior */
-    margin: 2%; /* Usa porcentajes para el espacio exterior */
+    padding: 2%; /
+    margin: 2%; /
     border-radius: 8px;
   }
   
