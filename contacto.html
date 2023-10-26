@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/14624a266b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/estilo.css">
-    <link rel="stylesheet" href="./css/contacto.css">    
+    <link rel="stylesheet" href="./css/contacto.css">
+    <link rel="stylesheet" href="./css/footer.css">     
     <title>Universo Infinito: Explorando el Cosmos</title>
     <link rel="icon" type="image/x-icon" href="./Imagenes/Logo.png">
       
@@ -24,17 +25,16 @@
             <input type="checkbox" id="ver_menu_hamb" class="ver_menu_hamb">
             <ul class="menu_link">
                 <li class="menu_items">
-                    <a href="./index.html" class="menu_href">Inicio</a>
+                    <a href="#ir_pg_inicio" class="menu_href">Inicio</a>
                 </li>
-                <li class="menu_items">
-                    <a href="./index.html#ir_qs" class="menu_href">Quienes somos?</a>
-                </li>
+                <!-- <li class="menu_items">
+                    <a href="#ir_qs" class="menu_href">Quienes somos?</a>
+                </li> -->
                 <li class="menu_items">
                     <a href="./cursos.html" class="menu_href">Cursos</a>
                 </li>
                 <li class="menu_items">
-                    <a href="" class="menu_href">Recursos
-                    </a>
+                    <a href="" class="menu_href">Recursos</a>
                 </li>
                 <li class="menu_items">
                     <a href="./contacto.html" class="menu_href">Contacto</a>
@@ -52,20 +52,27 @@
                 </label>
             </div>
         </nav>
+        <section id="ir_pg_inicio" class="inicio_contenedor contenedor">
+            <div style="display: grid;grid-template-columns: 1fr;">
+            <h1 class="frase_titulo">Canal de Ayuda<br></h1>
+            </div>
+            <p class="inicio_parrafo"><span style="padding: 45px;">¿Necesitas Ayuda? Selecciona la forma en la que podemos atender tu consulta.</span></p>
+            <!-- <img src="" alt="Flecha para pasar a siguiente bloque" class="bt_next_inicio"> -->
+        </section>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200"><path fill="#ffffff" fill-opacity="1" d="M0,64L60,58.7C120,53,240,43,360,37.3C480,32,600,32,720,64C840,96,960,160,1080,165.3C1200,171,1320,117,1380,90.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
     </header>
-    
+</body>
     <main>
         <section>
-            <div class="titulo_subt">    
+            <!-- <div class="titulo_subt">    
                 <div class="title-contact">
                     <h1>Canal de Ayuda</h1>
                     <h3>¿Necesitas Ayuda? Selecciona la forma en la que podemos atender tu consulta.</h3>
                 </div>
-            </div>
+            </div> -->
 
         <br>
-        <br>
-        <br>
+               
 
             <div class="contact-form">
             
@@ -140,83 +147,41 @@
         </main>
 
         <footer>
-
-        <div class="contenedor-footer">
-            <div class="seccion-footer">
-                <ul>
-                    <li class="footer-li"><a href="">Sede CABA</a></li>
-                    <li class="footer-li2"><a href="">Lorem ipsum dolor sit amet.</a></li>
-                    <li class="footer-li2"><a href="">Lorem ipsum dolor sit amet.</a></li>
-                    <li class="footer-li2"><a href="">Lorem ipsum dolor sit amet.</a></li>
-                </ul>
-            </div>
-
-            <div class="seccion-footer">
-                <ul>
-                    <li class="footer-li"><a href="">Sede Zona Oeste</a></li>
-                    <li class="footer-li2"><a href="">Lorem ipsum dolor sit amet.</a></li>
-                    <li class="footer-li2"><a href="">Lorem ipsum dolor sit amet.</a></li>
-                    <li class="footer-li2"><a href="">Lorem ipsum dolor sit amet.</a></li>
-                </ul>
-            </div>
-
-            <div class="seccion-footer">
-                <ul>
-                    <li class="footer-li"><a href="">Sede Zona Sur</a></li>
-                    <li class="footer-li2"><a href="">Lorem ipsum dolor sit amet.</a></li>
-                    <li class="footer-li2"><a href="">Lorem ipsum dolor sit amet.</a></li>
-                    <li class="footer-li2"><a href="">Lorem ipsum dolor sit amet.</a></li>
-                </ul>
-            </div>
+<body>
+    <div class="footer">
+        <div class="footer-section contact">
+            <h3>Contacto</h3>
+            <p>Av. Sarmiento s/n, 1425 CABA</p>
+            <a href="mailto:planetario@buenosaires.gob.ar">planetario@buenosaires.gob.ar</a>
+            <p>Whatsapp: (011) 4456-7890</p>
         </div>
-
-
-        <div class="contenedor-footer">
-            <div class="seccion-footer">
-                <ul>
-                    <li class="footer-li"><a href="">Propuesta</a></li>
-                    <li class="footer-li2"><a href="">Lorem ipsum dolor sit amet.</a></li>
-                    <li class="footer-li2"><a href="">Lorem ipsum dolor sit amet.</a></li>
-                    <li class="footer-li2"><a href="">Lorem ipsum dolor sit amet.</a></li>
-                </ul>
-            </div>
-            <div class="seccion-footer">
-                <ul>
-                    <li class="footer-li"><a href="">Propuesta</a></li>
-                    <li class="footer-li2"><a href="">Lorem ipsum dolor sit amet.</a></li>
-                    <li class="footer-li2"><a href="">Lorem ipsum dolor sit amet.</a></li>
-                    <li class="footer-li2"><a href="">Lorem ipsum dolor sit amet.</a></li>
-                </ul>
-            </div>
+        <div class="footer-section social">
+            <h3>Redes Sociales</h3>
+            <ul class="social-icons">
+                <li><a href="https://www.facebook.com/"target="_blank"><span class="fa-brands fa-facebook" title="Facebook"></span></a></li>
+                <li><a href="https://www.instagram.com/"target="_blank"><span class="fa-brands fa-instagram" title="Instagram"></span></a></li>
+                <li><a href="https://www.linkedin.com/feed/"target="_blank"><span class="fa-brands fa-linkedin" title="Linkedin"></span></a></li>
+                <li><a href="https://twitter.com/home"target="_blank"><span class="fa-brands fa-square-x-twitter" title="Twitter"></span></a></li>
+                <li><a href="https://www.whatsapp.com/?lang=es"target="_blank"><span class="fa-brands fa-whatsapp" title="Whatsapp"></span></a></li>
+                <li><a href="https://www.youtube.com/watch?v=4_OT4xFrjmM&ab_channel=afarTV"target="_blank"><span class="fa-brands fa-youtube" title="Youtube"></span></a></li>
+                
+            </ul>
         </div>
-
-        <hr>
-        <div class="contenedor-iconos">
-            <div class="iconos">
-                <a href="#"><span class="fa-brands fa-twitter" title="Twitter"></span></a>
-                <a href="#"><span class="fa-brands fa-facebook" title="Facebook"></span></a>
-                <a href="#"><span class="fa-brands fa-instagram" title="Instagram"></span></a>
-                <a href="#"><span class="fa-brands fa-linkedin" title="Linkedin"></span></a>
-                <a href="#"><span class="fa-brands fa-whatsapp" title="Whatsapp"></span></a>
-                <a href="#"><span class="fa-brands fa-youtube" title="Youtube"></span></a>
-            </div>
-
-            <div class="boton-arrep">
-                <ul>
-                    <li><a href="">Términos y Condiciones</a></li>
-                    <li><a href="">Botón de Arrepentimiento</a></li>
-                </ul>
-            </div>
+        <div class="footer-section links">
+            <h3>Enlaces</h3>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="">Recursos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
         </div>
-
-        <hr>
-
-        <div class="final-footer">
-            <div class="copyright">
-                <p>Universo Infinito: Explorando el cosmos &#9400</p>
-            </div>
+        <div class="footer-section copyright">
+            <img src="./Imagenes/Logo.png" alt="" class="logo_ppl">
+            <p>&copy; 2023 Univero Infinito: Explorando el Cosmos.</p>
         </div>
-
+    </div>
+</body>
     </footer>
 
     

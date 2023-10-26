@@ -116,7 +116,7 @@ select{
 
 input[type="submit"],
 input[type="reset"] {
-    background-color: gray;
+    background-color: blue;
     color: #fff;
     padding: 10px 20px;
     width: 102.5%;
@@ -130,12 +130,12 @@ input[type="reset"] {
 /*-------------------------Hover CTA-----------------*/
 
 #btn-enviar:hover {
-    background-color: gold; /* Cambia el color de fondo al pasar el cursor */
-    color: #fff; /* Cambia el color del texto al pasar el cursor */
+    /* background-color: gold; Cambia el color de fondo al pasar el cursor */
+    color: gold /* Cambia el color del texto al pasar el cursor */
 }
 
 input[type="reset"]:hover {
-    background-color: gold; /* Cambia el color de fondo al pasar el cursor */
-    color: #fff; /* Cambia el color del texto al pasar el cursor */
+    /* background-color: gold; Cambia el color de fondo al pasar el cursor */
+    color: gold /* Cambia el color del texto al pasar el cursor */
 }
 
