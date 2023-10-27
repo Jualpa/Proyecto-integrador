@@ -1,5 +1,10 @@
 /*-------------------------Contacto---------------------------*/
 
+.html, body{
+    font-family: Arial, Helvetica, sans-serif
+}
+
+
 /*------------------Banner----------------*/
 
 #banner {
@@ -59,7 +64,7 @@
 
 .contact-info-cont h4{
     font-size: 86%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
     margin-top: 0;
     
 }
@@ -80,7 +85,7 @@ form {
     margin: auto;
     padding: auto;
     border-radius: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
     
 }
 
@@ -109,7 +114,7 @@ textarea {
 
 select{
     font-size: 80%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
     font-weight: bold;
 }
 
@@ -126,6 +131,29 @@ input[type="reset"] {
     box-sizing: border-box;
     /* max-width: 160%; */
 }
+
+.inicio_parrafo{
+    /* padding: 45px; */
+}
+
+.inicio_contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.frs-titl, .inicio_prfo {
+    padding: 10px; /* Agrega un espacio entre los elementos */
+}
+
+@media (max-width: 768px) {
+    /* Aplicar estilos específicos para pantallas más pequeñas (ajusta el valor según tus necesidades) */
+    .frs-titl, .inicio_prfo {
+        padding: 5px; /* Reduce el espacio entre los elementos */
+    }
+}
+
 
 /*-------------------------Hover CTA-----------------*/
 
