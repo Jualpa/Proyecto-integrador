@@ -17,10 +17,10 @@
 
 .accesos_recursos {
     width: auto;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    align-content: space-around;
 
 }
 
@@ -29,30 +29,113 @@ li {
     padding-top: 2px;
 }
 
-.carrusel_cont ul, .container ul {
-    width: 100%;
+/* --------------- Carrusel animado con textos ----------------------- */
+.carrucel_cont {
+    background-color: black;
+    width: var(--size-imagen);
+    margin: 0 auto ;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.carrucel_cont ul {
+    display: flex;
     padding: 0;
+
+}
+
+.carrucel_cont li {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.carrucel_cont ul, .container ul {
+    width: 100%;
+
+}
+
+.carrucel_cont img {
+    width: var(--size-imagen);
+    animation: presentacion 20s infinite alternate ease-in-out;
+}
+
+@keyframes presentacion {
+    0% {
+        margin-left: 0;
+    }
+
+    12% {
+        margin-left: 0;
+    }
+
+    22% {
+        margin-left: -100%;
+    }
+
+    34% {
+        margin-left: -100%;
+    }
+
+    44% {
+        margin-left: -200%;
+    }
+
+    56% {
+        margin-left: -200%;
+    }    
+    
+    66% {
+        margin-left: -300%;
+    }
+    76% {
+        margin-left: -300%;
+    }
+
+    88% {
+        margin-left: -400%;
+    }
+    100% {
+        margin-left: -400%;
+    }
+
+}
+
+@media (max-width: var(--size-imagen)) {
+
+
+    .texto_filmina {
+        top: 15px;
+        padding: 0 25px;
+    }
+
+    .texto_filmina h2 {
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
+
+    .texto_filmina p {
+        font-size: 15px;
+    }
 }
 
 
+
+
 #ex1 {
-    /* width: 50%; */
     margin: 0 auto;
 }
 
 
 .container{
-    /* width: 100%; */
     margin: 0 auto;
     padding: 0;
-    /* min-width: 200px; */
     display: flex;
-    /* align-content: center; */
     align-items: center;
     flex-wrap: wrap;
 }
-
-
 
 .accesos_recursos h2, h3 {
     text-decoration: underline ;
@@ -66,9 +149,6 @@ li {
 }
 
 .img_ppl {
-    
-
-    /* min-width: var(--size-imagen); */
     width: 100%;
 
 }

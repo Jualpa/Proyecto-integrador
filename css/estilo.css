@@ -5,7 +5,7 @@
     --color-Fnt: #03021fff;
     --padding-cont: 10px 0;
     --color-titulos: #001a49;
-    --size-imagen: 450px;
+    --size-imagen: 400px;
 }
 
 
@@ -215,7 +215,6 @@ html {
         font-size: 1rem;
     }
 
-
 }
 
 @media screen and (max-width: 560px) {
@@ -229,7 +228,6 @@ html {
 .seccion_derecha,
 .seccion_izq {
     border: #000000;
-    /* box-sizing: 2px; */
     background-color: rgba(0, 191, 255, 0.331);
     margin: 0 auto;
     width: 100%;
@@ -308,7 +306,7 @@ html {
 
 .astronomo {
     width: 30%;
-    min-width: 250px;
+    min-width: 300px;
     margin: 10px auto;
     padding: 20px;
     box-sizing: border-box;
@@ -344,6 +342,18 @@ html {
 
 .boton:hover {
     color: gold;
+}
+
+@media screen and (max-width: 1030px) {
+    .astronomo {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .astronomo {
+        width: 100%;
+    }
 }
 
 /* ----------------------- Seccion Alumnos ---------------------------- */
@@ -406,117 +416,6 @@ html {
     text-align: center;
     margin: px;
 }
-
-
-/* --------------- Carrusel animado con textos ----------------------- */
-.carrucel_cont {
-    background-color: black;
-    width: var(--size-imagen);
-    min-width: var(--size-imagen);
-    height: auto;
-    margin: 0 auto ;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-}
-
-.carrucel_cont ul {
-    display: flex;
-    padding: 0;
-    animation: presentacion 20s infinite alternate ease-in-out;
-
-}
-
-.carrucel_cont li {
-    padding: 0;
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
-
-/* .texto_filmina {
-    position: absolute;
-    text-align: center;
-    /* padding: 0 250px; */
-/*   top: 250px;
-    color: #ffffff;
-} */
-
-/* .texto_filmina h2 {
-    font-size: 45px;
-    margin-bottom: 35px;
-} */
-
-.carrucel_cont img {
-    width: var(--size-imagen);
-    height: auto;
-}
-
-@keyframes presentacion {
-    0% {
-        margin-left: 0;
-    }
-
-    10% {
-        margin-left: 0;
-    }
-
-    20% {
-        margin-left: -100%;
-    }
-
-    30% {
-        margin-left: -100%;
-    }
-
-    40% {
-        margin-left: -200%;
-    }
-
-    50% {
-        margin-left: -200%;
-    }    
-    
-    60% {
-        margin-left: -300%;
-    }
-    70% {
-        margin-left: -300%;
-    }
-
-    80% {
-        margin-left: -400%;
-    }
-    90% {
-        margin-left: -400%;
-    }
-
-    100% {
-        margin-left: -400%;
-    }
-}
-
-@media (max-width: 991px) {
-    .carrucel_cont {
-        width: 340px;
-    }
-
-    .texto_filmina {
-        top: 15px;
-        padding: 0 25px;
-    }
-
-    .texto_filmina h2 {
-        font-size: 35px;
-        margin-bottom: 15px;
-    }
-
-    .texto_filmina p {
-        font-size: 15px;
-    }
-}
-
-
 
 /* ------------- Footer ------------------ */
 
