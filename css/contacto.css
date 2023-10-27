@@ -1,9 +1,5 @@
 /*-------------------------Contacto---------------------------*/
 
-.html, body{
-    font-family: Arial, Helvetica, sans-serif
-}
-
 
 /*------------------Banner----------------*/
 
@@ -85,7 +81,7 @@ form {
     margin: auto;
     padding: auto;
     border-radius: 20px;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     
 }
 
@@ -114,7 +110,7 @@ textarea {
 
 select{
     font-size: 80%;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     font-weight: bold;
 }
 
