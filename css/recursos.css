@@ -121,9 +121,6 @@ li {
     }
 }
 
-
-
-
 #ex1 {
     margin: 0 auto;
 }
@@ -135,6 +132,10 @@ li {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.container ul {
+    padding: 0;
 }
 
 .accesos_recursos h2, h3 {
