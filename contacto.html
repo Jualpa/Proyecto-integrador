@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -7,19 +7,15 @@
     <script src="https://kit.fontawesome.com/14624a266b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/estilo.css">
     <link rel="stylesheet" href="./css/contacto.css">
-    <link rel="stylesheet" href="./css/footer.css">     
     <title>Universo Infinito: Explorando el Cosmos</title>
     <link rel="icon" type="image/x-icon" href="./Imagenes/Logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap" rel="stylesheet">
-      
-</head>
 
+</head>
 <body>
     <header class="inicio">
-        <!-- contenedor es una clase que contiene cada parte del codigo -->
-        <!-- <input type="checkbox" id="ver_menu_hamb" class="ver_menu_hamb"> -->
         <nav class="menu">
             <div class="menu_logo">
                 <img src="./Imagenes/Logo.png" alt="" class="logo_ppl">
@@ -30,9 +26,6 @@
                 <li class="menu_items">
                     <a href="./index.html" class="menu_href">Inicio</a>
                 </li>
-                <!-- <li class="menu_items">
-                    <a href="#ir_qs" class="menu_href">Quienes somos?</a>
-                </li> -->
                 <li class="menu_items">
                     <a href="./cursos.html" class="menu_href">Cursos</a>
                 </li>
@@ -48,7 +41,6 @@
                     <i class="fa-solid fa-bars av_img_hamb"></i>
                 </label>
             </div>
-            <!-- cerrar menu -->
             <div class="menu_cerrar">
                 <label for="ver_menu_hamb">
                     <i class="fa-solid fa-xmark av_img_hamb"></i>
@@ -57,101 +49,86 @@
         </nav>
         <section id="ir_pg_inicio" class="inicio_contenedor">
             <div class="frs-titl">
-            <h1 class="frase_titulo">Canal de Ayuda<br></h1>
+                <h1 class="frase_titulo">Canal de Ayuda<br></h1>
             </div>
             <div class="inicio_prfo">
-            <p class="inicio_parrafo">¿Necesitas Ayuda? Selecciona la forma en la que podemos atender tu consulta.</p>
+                <p class="inicio_parrafo">¿Necesitas Ayuda? Selecciona la forma en la que podemos atender tu consulta.
+                </p>
             </div>
         </section>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200"><path fill="#ffffff" fill-opacity="1" d="M0,64L60,58.7C120,53,240,43,360,37.3C480,32,600,32,720,64C840,96,960,160,1080,165.3C1200,171,1320,117,1380,90.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200">
+            <path fill="#ffffff" fill-opacity="1"
+                d="M0,64L60,58.7C120,53,240,43,360,37.3C480,32,600,32,720,64C840,96,960,160,1080,165.3C1200,171,1320,117,1380,90.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+            </path>
+        </svg>
     </header>
 </body>
-    <main>
-        <section>
-            <!-- <div class="titulo_subt">    
-                <div class="title-contact">
-                    <h1>Canal de Ayuda</h1>
-                    <h3>¿Necesitas Ayuda? Selecciona la forma en la que podemos atender tu consulta.</h3>
-                </div>
-            </div> -->
-
+<main>
+    <section>
+        <div class="contact-form">
+            <div class="form">
+                <form action="" method="POST" onsubmit="return validarFormulario()">
+                    <h2>Formulario de Contacto</h2>
+                    <h5>Por favor, complete el formulario y le responderemos a la brevedad.</h5>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                    <br>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido">
+                    <br>
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email">
+                    <br>
+                    <label for="asunto">Asunto:</label>
+                    <select id="asunto" name="asunto">
+                        <option value="consulta">Consulta General</option>
+                        <option value="pago">No registra mi pago</option>
+                        <option value="arrepentimiento">Me arrepentí de la Compra</option>
+                        <option value="asesor">Solicitar un asesor</option>
+                    </select>
+                    <br>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" cols="70"></textarea>
+                    <br>
+                    <input type="submit" value="Enviar" id="btn-enviar">
+                    <input type="reset" value="Restablecer">
+                </form>
+            </div>
+        </div>
         <br>
-               
+        <br>
+        <br>
 
-            <div class="contact-form">
-            
-                <div class="form">
-                    <form action="" method="POST" onsubmit="return validarFormulario()">
-                    
-                        <h2>Formulario de Contacto</h2>
-                        <h5>Por favor, complete el formulario y le responderemos a la brevedad.</h5>
-                    
-                    
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre">
-                        <br>
-    
-                        <label for="apellido">Apellido:</label>
-                        <input type="text" id="apellido" name="apellido" >
-                        <br>
-                    
-                    
-                        <label for="email">Correo Electrónico:</label>
-                        <input type="email" id="email" name="email" >
-                        <br>
-                    
-    
-                        <label for="asunto">Asunto:</label>
-                        <select id="asunto" name="asunto">
-                            <option value="consulta">Consulta General</option> 
-                            <option value="pago">No registra mi pago</option>
-                            <option value="arrepentimiento">Me arrepentí de la Compra</option>
-                            <option value="asesor">Solicitar un asesor</option> 
-                               
-                        </select>
-                        <br>
-                    
-    
-                        <label for="mensaje">Mensaje:</label>
-                        <textarea id="mensaje" name="mensaje" rows="4" cols="70"></textarea>
-                        <br>
-                    
-    
-                        <input type="submit" value="Enviar" id="btn-enviar">
-                        <input type="reset" value="Restablecer">
-                    </form>
-                    </div>
-            
-            </div>            
+        <div class="contact-info">
 
-            <br>
-            <br>
-            <br>
-            
-                <div class="contact-info">
-                    
-                        <div class="contact-info-cont">
+            <div class="contact-info-cont">
 
-                            <h2>Canales de Contacto</h2>
-                            <br>
-                            <h4>Realiza la consulta que necesites por los siguientes medios habilitados:</h4>
-                            <br>
-                            <p class="email_title"> <i class="fa-regular fa-envelope fa-lg"></i> Email:  <b>contacto@universo-infinito.com.ar </b></p>
-                            <p class="phone_title"> <i class="fa-solid fa-phone fa-lg"></i> Teléfono:  <b>(011)-4455-6734</b></p>
-                            <p class="wpp_title"> <i class="fa-brands fa-whatsapp fa-lg"></i> Whatsapp:  <b>+5491154367238</b></p>
-                            <p class="map_title"> <i class="fa-solid fa-map fa-lg"></i> Atención por Oficina:  <b>Av. Sarmiento s/n 1er Piso, C1425 CABA</b></p>
-                            <br>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.363340596206!2d-58.41420072546263!3d-34.56967185569883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb57475fd5245%3A0x5eefd3cd753143d7!2sPlanetario%20Galileo%20Galilei!5e0!3m2!1ses-419!2sar!4v1697585578915!5m2!1ses-419!2sar" width="1400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>    
-                </div>    
+                <h2>Canales de Contacto</h2>
+                <br>
+                <h4>Realiza la consulta que necesites por los siguientes medios habilitados:</h4>
+                <br>
+                <p class="email_title"> <i class="fa-regular fa-envelope fa-lg"></i> Email:
+                    <b>contacto@universo-infinito.com.ar </b>
+                </p>
+                <p class="phone_title"> <i class="fa-solid fa-phone fa-lg"></i> Teléfono: <b>(011)-4455-6734</b></p>
+                <p class="wpp_title"> <i class="fa-brands fa-whatsapp fa-lg"></i> Whatsapp: <b>+5491154367238</b></p>
+                <p class="map_title"> <i class="fa-solid fa-map fa-lg"></i> Atención por Oficina: <b>Av. Sarmiento s/n
+                        1er Piso, C1425 CABA</b></p>
+                <br>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.363340596206!2d-58.41420072546263!3d-34.56967185569883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb57475fd5245%3A0x5eefd3cd753143d7!2sPlanetario%20Galileo%20Galilei!5e0!3m2!1ses-419!2sar!4v1697585578915!5m2!1ses-419!2sar"
+                    width="1400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
 
-                <script src="./js/validacion.js"></script> 
-            </section>
+        <script src="./js/validacion.js"></script>
+    </section>
 
-        </main>
+</main>
 
-        <footer>
-<body>
+<footer>
+
     <div class="footer">
         <div class="footer-section contact">
             <h3>Contacto</h3>
@@ -162,13 +139,18 @@
         <div class="footer-section social">
             <h3>Redes Sociales</h3>
             <ul class="social-icons">
-                <li><a href="https://www.facebook.com/"target="_blank"><span class="fa-brands fa-facebook" title="Facebook"></span></a></li>
-                <li><a href="https://www.instagram.com/"target="_blank"><span class="fa-brands fa-instagram" title="Instagram"></span></a></li>
-                <li><a href="https://www.linkedin.com/feed/"target="_blank"><span class="fa-brands fa-linkedin" title="Linkedin"></span></a></li>
-                <li><a href="https://twitter.com/home"target="_blank"><span class="fa-brands fa-square-x-twitter" title="Twitter"></span></a></li>
-                <li><a href="https://www.whatsapp.com/?lang=es"target="_blank"><span class="fa-brands fa-whatsapp" title="Whatsapp"></span></a></li>
-                <li><a href="https://www.youtube.com/watch?v=4_OT4xFrjmM&ab_channel=afarTV"target="_blank"><span class="fa-brands fa-youtube" title="Youtube"></span></a></li>
-                
+                <li><a href="https://www.facebook.com/" target="_blank"><span class="fa-brands fa-facebook"
+                            title="Facebook"></span></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><span class="fa-brands fa-instagram"
+                            title="Instagram"></span></a></li>
+                <li><a href="https://www.linkedin.com/feed/" target="_blank"><span class="fa-brands fa-linkedin"
+                            title="Linkedin"></span></a></li>
+                <li><a href="https://twitter.com/home" target="_blank"><span class="fa-brands fa-square-x-twitter"
+                            title="Twitter"></span></a></li>
+                <li><a href="https://www.whatsapp.com/?lang=es" target="_blank"><span class="fa-brands fa-whatsapp"
+                            title="Whatsapp"></span></a></li>
+                <li><a href="https://www.youtube.com/watch?v=4_OT4xFrjmM&ab_channel=afarTV" target="_blank"><span
+                            class="fa-brands fa-youtube" title="Youtube"></span></a></li>
             </ul>
         </div>
         <div class="footer-section links">
@@ -185,10 +167,10 @@
             <p>&copy; 2023 Univero Infinito: Explorando el Cosmos.</p>
         </div>
     </div>
-</body>
-    </footer>
 
-    
+</footer>
+
+
 </body>
 
 </html>
