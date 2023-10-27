@@ -331,6 +331,21 @@ html {
     font-size: .9rem;
 }
 
+.boton {
+    width: 90%;
+    display: inline-block;
+    background-color: blue;
+    justify-self: center;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+.boton:hover {
+    color: gold;
+}
+
 /* ----------------------- Seccion Alumnos ---------------------------- */
 
 .alumnos {

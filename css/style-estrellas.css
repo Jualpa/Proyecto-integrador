@@ -52,20 +52,7 @@ li {
     flex-wrap: wrap;
 }
 
-.boton {
-    width: 90%;
-    display: inline-block;
-    background-color: blue;
-    justify-self: center;
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 30px;
-}
 
-.boton:hover {
-    color: gold;
-}
 
 .accesos_recursos h2, h3 {
     text-decoration: underline ;
@@ -79,7 +66,8 @@ li {
 }
 
 .img_ppl {
-    min-width: 250px;
+    
+
     /* min-width: var(--size-imagen); */
     width: 100%;
 
