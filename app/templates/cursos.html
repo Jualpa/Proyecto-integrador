@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/14624a266b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/estilo.css">
-    <link rel="stylesheet" href="css/cursos.css">
+    <link rel="stylesheet" href="../static/css/estilo.css">
+    <link rel="stylesheet" href="../static/css/cursos.css">
     <title>Universo Infinito: Explorando el Cosmos</title>
-    <link rel="icon" type="image/x-icon" href="./Imagenes/Logo.png">
+    <link rel="icon" type="image/x-icon" href="../static/Imagenes/Logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap" rel="stylesheet">
@@ -16,36 +16,8 @@
 
 <body>
     <header class="inicio">
-        <nav class="menu">
-            <div class="menu_logo">
-                <img src="./Imagenes/Logo.png" alt="" class="logo_ppl">
-                <h2 class="menu_titulo">Universo Infinito: Explorando el Cosmos</h2>
-            </div>
-            <input type="checkbox" id="ver_menu_hamb" class="ver_menu_hamb">
-            <ul class="menu_link">
-                <li class="menu_items">
-                    <a href="index.html" class="menu_href">Inicio</a>
-                </li>
-                <li class="menu_items">
-                    <a href="cursos.html" class="menu_href">Cursos</a>
-                </li>
-                <li class="menu_items">
-                    <a href="recursos.html" class="menu_href">Recursos</a>
-                </li>
-                <li class="menu_items">
-                    <a href="contacto.html" class="menu_href">Contacto</a>
-                </li>
-            </ul>
-            <div class="menu_hamb">
-                <label for="ver_menu_hamb">
-                    <i class="fa-solid fa-bars av_img_hamb"></i>
-                </label>
-            </div>
-            <div class="menu_cerrar">
-                <label for="ver_menu_hamb">
-                    <i class="fa-solid fa-xmark av_img_hamb"></i>
-                </label>
-            </div>
+        <nav id="nav" class="menu">
+            <!-- Nav en js -->  
         </nav>
         <section id="ir_pg_inicio" class="inicio_contenedor contenedor">
             <h1 class="frase_titulo">La astronomía obliga al alma a mirar hacia arriba y nos
@@ -60,6 +32,7 @@
 
     <!-- parte de cursos con imagenes -->
     <main>
+        <div id="app">
         <section class="cursos">
             <div class="container">
                 <h2 class="subtite">Nuestra oferta de cursos</h2>
@@ -72,7 +45,7 @@
                 <div class="projects__grid">
                     <article class="projects__Item">
                         <a href="#curso_Asto_Obs">
-                            <img src="Imagenes/curso1.2.jpeg" class="projects__img" alt="Curso 1">
+                            <img src="../static/Imagenes/curso1.2.jpeg" class="projects__img" alt="Curso 1">
                             <div class="projects__hover">
                                 <h2 class="projects__title">Curso de Astronomía Observacional</h2>
                                 <p class="projects__desc">Aprende los fundamentos de la astronomía y explora el sistema
@@ -82,7 +55,7 @@
                     </article>
                     <article class="projects__Item">
                         <a href="#curso_Astro_Gen">
-                            <img src="Imagenes/Planetas.jpeg" class="projects__img" alt="Curso 2">
+                            <img src="../static/Imagenes/Planetas.jpeg" class="projects__img" alt="Curso 2">
                             <div class="projects__hover">
                                 <h2 class="projects__title">Curso de Astronomía General</h2>
                                 <p class="projects__desc">Profundiza en los conceptos complejos del universo y la
@@ -92,7 +65,7 @@
                     </article>
                     <article class="projects__Item">
                         <a href="#curso_Estruc_Cosmic">
-                            <img src="Imagenes/estrcuturas cosmicas.jpeg" class="projects__img" alt="Curso 3">
+                            <img src="../static/Imagenes/estrcuturas cosmicas.jpeg" class="projects__img" alt="Curso 3">
                             <div class="projects__hover">
                                 <h2 class="projects__title">Curso de estructuras cósmicas</h2>
                                 <p class="projects__desc">Explora la estructura y evolución del universo en escalas
@@ -103,7 +76,7 @@
                     </article>
                     <article class="projects__Item">
                         <a href="#curso_esc_dist">
-                            <img src="Imagenes/curso 4jpeg.jpeg" class="projects__img" alt="Curso 4">
+                            <img src="../static/Imagenes/curso 4jpeg.jpeg" class="projects__img" alt="Curso 4">
                             <div class="projects__hover">
                                 <h2 class="projects__title">Curso de escalera de las distancias</h2>
                                 <p class="projects__desc">Aprende técnicas y herramientas para la observación del cielo
@@ -112,12 +85,32 @@
                             </div>
                         </a>
                     </article>
+                    <article class="projects__Item">
+                        <a href="#curso_esc_dist">
+                            <img src="../static/Imagenes/curso 4jpeg.jpeg" class="projects__img" alt="Curso 4">
+                            <div class="projects__hover">
+                                <h2 class="projects__title">Curso de escalera de las distancias</h2>
+                                <p class="projects__desc">Aprende técnicas y herramientas para la observación del cielo
+                                    nocturno.</p>
+
+                            </div>
+                        </a>
+                    </article>
+                    <article v-for="producto in productos" class="projects__Item">
+                        <a :href="'#'+producto.nombre">
+                            <img :src="producto.imagen" class="projects__img" :alt="producto.nombre">
+                            <div class="projects__hover">
+                                <h2 class="projects__title">{{producto.nombre}}</h2>
+                                <p class="projects__desc">{{producto.descripcion}}</p>
+                            </div>
+                        </a>
+                    </article>
                 </div>
             </div>
         </section>
-        <div id="app">
+        
             <section v-for="producto in productos" class="curso">
-                <div class="curso-info">
+                <div class="curso-info" :id="producto.nombre">
                     <img :src="producto.imagen" :alt="producto.nombre">
                     <h2>{{producto.nombre}}</h2>
                     <div class="valoracion">
@@ -133,82 +126,28 @@
                         <!-- fin de estrellas -->
                     </div>
                     <p>Costo: ${{producto.precio}}</p>
-                    <p>Aprende fundamentos de la astronomía y explora el cielo</p>
-                    <button class="btn-agotado">Vacantes {{producto.stock}}</button>
+                    <p>{{producto.descripcion}}</p>
+                    <button class="btn-agotado">Vacantes {{producto.vacantes}}</button>
                 </div>
                 <div class="curso-detalles">
                     <div class="detalle">
-                        <h3>El mejor curso de astronomía Observacional</h3>
-                        <p>No hace falta disponer de telescopio para asistir al curso, ya que nosotros llevaremos
-                            varios.
-                            Podrás probar diferentes equipos y aprender a manejar todo tipo de telescopios para que tú
-                            mismo
-                            puedas decidir cuál es el que más se adapta a ti. Pero, si tienes telescopio, no dudes en
-                            traerlo te ayudaremos a montarlo y realizar tus primeras observaciones.</p>
+                        <h3>El mejor {{producto.nombre}}</h3>
+                        <p>{{producto.descripcion}}</p>
                     </div>
                     <div class="detalle">
                         <h3>Contenido teórico del curso</h3>
-                        <p>Mecánica celeste: movimientos del cielo;
-                            coordenadas; visibilidad planetaria
-                            Instrumentación astronómica: tipos de telescopios;
-                            oculares y accesorios
-                            El cielo a simple vista: orientación en el cielo, qué ver a simple vista
-                            El cielo a través del telescopio: qué ver con telescopio; cómo encontrar los objetos; cómo
-                            usar
-                            unas cartas celestes.</p>
+                        <p>{{producto.contenido_teo}}</p>
                     </div>
                     <div class="detalle">
                         <h3>Contenido práctico del curso</h3>
-                        <p>Montaje paso a paso de diferentes telescopios
-                            Alineación y puesta en estación del telescopio
-                            Ajustes básicos: Enfoque, contrapesado y colimación
-                            Recorrido guiado por las constelaciones
-                            Observación con telescopios. Además, se proporcionarán consejos sobre
-                            fotografía astronómica y cómo documentar observaciones.
+                        <p>{{producto.contenido_pra}}</p>
                     </div>
                 </div>
             </section>
         </div>
     </main>
-    <footer>
-        <div class="footer">
-            <div class="footer-section contact">
-                <h3>Contacto</h3>
-                <p>Av. Sarmiento s/n, 1425 CABA</p>
-                <a href="mailto:espacio@infinito.com.ar">espacio@infinito.com.ar</a>
-                <p>Whatsapp: (011) 4456-7890</p>
-            </div>
-            <div class="footer-section social">
-                <h3>Redes Sociales</h3>
-                <ul class="social-icons">
-                    <li><a href="https://www.facebook.com/" target="_blank"><span class="fa-brands fa-facebook"
-                                title="Facebook"></span></a></li>
-                    <li><a href="https://www.instagram.com/" target="_blank"><span class="fa-brands fa-instagram"
-                                title="Instagram"></span></a></li>
-                    <li><a href="https://www.linkedin.com/feed/" target="_blank"><span class="fa-brands fa-linkedin"
-                                title="Linkedin"></span></a></li>
-                    <li><a href="https://twitter.com/home" target="_blank"><span class="fa-brands fa-square-x-twitter"
-                                title="Twitter"></span></a></li>
-                    <li><a href="https://www.whatsapp.com/?lang=es" target="_blank"><span class="fa-brands fa-whatsapp"
-                                title="Whatsapp"></span></a></li>
-                    <li><a href="https://www.youtube.com/watch?v=4_OT4xFrjmM&ab_channel=afarTV" target="_blank"><span
-                                class="fa-brands fa-youtube" title="Youtube"></span></a></li>
-                </ul>
-            </div>
-            <div class="footer-section links">
-                <h3>Enlaces</h3>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="cursos.html">Cursos</a></li>
-                    <li><a href="recursos.html">Recursos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="footer-section copyright">
-                <img src="./Imagenes/Logo.png" alt="logo Univero Infinito">
-                <p>&copy; 2023 Univero Infinito: Explorando el Cosmos.</p>
-            </div>
-        </div>
+    <footer id="footer">
+        <!-- footer en js -->
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
@@ -217,11 +156,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
         </script>
-    <script src="./js/main.js"></script>
+    <script src="../static/js/main.js"></script>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
-    <script src="./js/productos.js"></script>
+    <script src="../static/js/productos.js"></script>
+
+    <script src="../static/js/nav.js"></script>
+    <script src="../static/js/footer.js"></script>
 </body>
 
 </html>

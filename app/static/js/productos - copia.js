@@ -3,21 +3,22 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
-            url: "https://jualpa.pythonanywhere.com/productos",
-            productos: [],
+            cursos: [],
+            url: "https://jualpa.pythonanywhere.com/cursos",
             error: false,
-            cargando: true
+            cargando: true,
+
         }
     },
-    created() {
-        this.fetchData(this.url)
-    },
+    // created() {
+    //     this.fetchData(this.url)
+    // },
     methods: {
         fetchData(url) {
             fetch(url)
                 .then(response => response.json())
                 .then(data => {
-                    this.productos = data;
+                    this.cursos = data;
                     this.cargando = false
                 })
                 .catch(err => {
@@ -25,8 +26,8 @@ createApp({
                     this.error = true
                 })
         },
-        eliminar(producto) {
-            const url = 'https://jualpa.pythonanywhere.com/productos/' + producto;
+        eliminar(curso) {
+            const url = 'https://jualpa.pythonanywhere.com/cursos/' + curso;
             var options = {
                 method: 'DELETE',
             }
@@ -34,7 +35,8 @@ createApp({
                 .then(res => res.text()) // or res.json()
                 .then(res => {
                     location.reload();
-                })
+                }
+                )
         }
 
     },

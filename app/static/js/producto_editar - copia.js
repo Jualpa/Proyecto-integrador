@@ -9,26 +9,37 @@ for (let i = 0; i < args.length; ++i) {
 //decodeUriComponent elimina los caracteres especiales que recibe en la URL 
 document.getElementById("id").value = decodeURIComponent(parts[0][1])
 document.getElementById("nombre").value = decodeURIComponent(parts[1][1])
-document.getElementById("precio").value = decodeURIComponent(parts[2][1])
-document.getElementById("stock").value =decodeURIComponent( parts[3][1])
-document.getElementById("imagen").value =decodeURIComponent( parts[4][1])
+document.getElementById("descripcion").value = decodeURIComponent(parts[2][1])
+document.getElementById("contenido_teo").value = decodeURIComponent(parts[3][1])
+document.getElementById("contenido_pra").value = decodeURIComponent(parts[4][1])
+parseFloat(document.getElementById("precio").value) = decodeURIComponent(parts[5][1])
+parseInt(document.getElementById("vacantes").value) = decodeURIComponent(parts[6][1])
+document.getElementById("imagen").value = decodeURIComponent(parts[7][1])
 
 function modificar() {
-    let id = document.getElementById("id").value
-    let n = document.getElementById("nombre").value
+    let n = document.getElementByI
+     let id = document.getElementById("id").valued("nombre").value
+    let d = document.getElementById("descripcion").value
+    let ct = document.getElementById("contenido_teo").value
+    let cp = document.getElementById("contenido_pra").value
     let p = parseFloat(document.getElementById("precio").value)
-    let s = parseInt(document.getElementById("stock").value)
+    let v = parseInt(document.getElementById("vacantes").value)
     let i = document.getElementById("imagen").value
-   
-    let producto = {
+
+
+    let curso = {
         nombre: n,
+        descripcion: d,
+        contenido_teo: ct,
+        contenido_pra: cp,
         precio: p,
-        stock: s,
-        imagen:i
+        vacantes: v,
+        imagen: i
     }
-    let url = "https://jualpa.pythonanywhere.com/productos/"+id
+
+    let url = "https://jualpa.pythonanywhere.com/cursos/"+id
     var options = {
-        body: JSON.stringify(producto),
+        body: JSON.stringify(curso),
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         redirect: 'follow'
@@ -37,7 +48,7 @@ function modificar() {
         .then(function () {
             console.log("modificado")
             alert("Registro modificado")
-            window.location.href = "./productos.html";  
+            window.location.href = "../templates/crud.html";  
         //NUEVO,  si les da error el fetch  comentar esta linea que puede dar error  
         })
         .catch(err => {

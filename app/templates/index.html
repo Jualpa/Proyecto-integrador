@@ -5,51 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/14624a266b.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="./Imagenes/Logo.png">
-    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="icon" type="image/x-icon" href="../static/Imagenes/Logo.png">
+    <link rel="stylesheet" href="../static/css/estilo.css">
     <title>Universo Infinito: Explorando el Cosmos</title>
-    <link rel="icon" type="image/x-icon" href="./Imagenes/Logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header class="inicio">
-        <nav class="menu">
-            <div class="menu_logo">
-                <img src="./Imagenes/Logo.png" alt="" class="logo_ppl">
-                <h2 class="menu_titulo">Universo Infinito: Explorando el Cosmos</h2>
-            </div>
-            <input type="checkbox" id="ver_menu_hamb" class="ver_menu_hamb">
-            <ul class="menu_link">
-                <li class="menu_items">
-                    <a href="index.html" class="menu_href">Inicio</a>
-                </li>
-                <li class="menu_items">
-                    <a href="./cursos.html" class="menu_href">Cursos</a>
-                </li>
-                <li class="menu_items">
-                    <a href="recursos.html" class="menu_href">Recursos</a>
-                </li>
-                <li class="menu_items">
-                    <a href="./contacto.html" class="menu_href">Contacto</a>
-                </li>
-                <li class="menu_items">
-                    <a href="./productos.html" class="menu_href">Admin</a>
-                </li>
-            </ul>
-            <div class="menu_hamb">
-                <label for="ver_menu_hamb">
-                    <i class="fa-solid fa-bars av_img_hamb"></i>
-                </label>
-            </div>
-            <div class="menu_cerrar">
-                <label for="ver_menu_hamb">
-                    <i class="fa-solid fa-xmark av_img_hamb"></i>
-                </label>
-            </div>
-        </nav>
+    <header id="header" class="inicio">
+    <nav id="nav" class="menu">
+        <!-- Nav en js -->  
+    </nav>
+
         <section id="ir_pg_inicio" class="inicio_contenedor contenedor">
             <h1 class="frase_titulo">Los pensamientos son como las estrellas ardientes, y las ideas estiran el
                 Universo.<br><span class="nombre_autor">Jami</span></h1>
@@ -67,7 +36,7 @@
                 para que puedas explorar el cielo nocturno como nunca antes.</h3>
         </section>
         <section class="seccion_derecha">
-            <img class="ilustracion" src="./Imagenes/aprender.png" alt="Ilustracion lateral de un cerebro">
+            <img class="ilustracion" src="../static/Imagenes/aprender.png" alt="Ilustracion lateral de un cerebro">
             <div class="texto-ilustracion">
                 <h2>Beneficios de nuestros cursos</h2>
                 <ul>
@@ -88,10 +57,10 @@
                     <li>Los fenómenos astronómicos más espectaculares.</li>
                 </ul>
             </div>
-            <img class="ilustracion" src="./Imagenes/Outer space-bro.png" alt="Ilustaracion del espacio">
+            <img class="ilustracion" src="../static/Imagenes/Outer space-bro.png" alt="Ilustaracion del espacio">
         </section>
         <section class="seccion_derecha">
-            <img class="ilustracion" src="./Imagenes/Telescope-bro.png" alt="Ilustracion de un telescopio siendo usado por la noche">
+            <img class="ilustracion" src="../static/Imagenes/Telescope-bro.png" alt="Ilustracion de un telescopio siendo usado por la noche">
             <div class="texto-ilustracion">
                 <h2>¿Qué habilidades desarrollarás?</h2>
                 <ul>
@@ -117,7 +86,7 @@
 
             <div class="desc_astro">
                 <article class="astronomo">
-                    <img src="./Imagenes/Nosotros1.jpg" alt="Retrato de persona dueña del sitio ">
+                    <img src="../static/Imagenes/Nosotros1.jpg" alt="Retrato de persona dueña del sitio ">
                     <h3 class="sub_caja">María Fernández</h3>
                     <p class="parrafo_desc">María es una apasionada de la astronomía. Desde pequeña, le encantaba
                         observar las estrellas con sus padres, y soñaba con poder dedicarse a esta ciencia. Estudió
@@ -127,7 +96,7 @@
                 </article>
 
                 <article class="astronomo">
-                    <img src="./Imagenes/Nosotros2.jpg" alt="Retrato de persona dueña del sitio">
+                    <img src="../static/Imagenes/Nosotros2.jpg" alt="Retrato de persona dueña del sitio">
                     <h3 class="sub_caja">Pedro García</h3>
                     <p class="parrafo_desc"> Pedro es un físico y astrónomo con una pasión por la divulgación
                         científica. Desde pequeño, le encantaba aprender sobre el universo y compartir sus conocimientos
@@ -137,7 +106,7 @@
                 </article>
 
                 <article class="astronomo">
-                    <img src="./Imagenes/Nosotros3.jpg" alt="Retrato de persona dueña del sitio">
+                    <img src="../static/Imagenes/Nosotros3.jpg" alt="Retrato de persona dueña del sitio">
                     <h3 class="sub_caja">Juan López</h3>
                     <p class="parrafo_desc">Juan es un ingeniero en Computación con una pasión por la astronomía. Desde
                         niño, le fascinaban los telescopios, y pasaba horas mirando el cielo nocturno con su telescopio
@@ -151,7 +120,7 @@
         <section id="ir_alumnos" class="alumnos contenedor">
             <h2 class="titulo">Que dicen algunos de nuestros alumnos acerca de nosotros</h2>
             <article class="alum_portada">
-                <img src="./Imagenes/Alberto-Garcia.jpg" alt="Rostro Alumno">
+                <img src="../static/Imagenes/Alberto-Garcia.jpg" alt="Rostro Alumno">
                 <h3 class="sub_caja">Alberto García</h3>
                 <div class="opinion">
                     <p class="parrafo_desc">"Los cursos de Universo Infinito me han ayudado a aprender mucho sobre
@@ -163,7 +132,7 @@
             </article>
 
             <article class="alum_portada">
-                <img src="./Imagenes/Elena-Sanchez.jpg" alt="Rostro Alumno">
+                <img src="../static/Imagenes/Elena-Sanchez.jpg" alt="Rostro Alumno">
                 <h3 class="sub_caja">Elena Sánchez</h3>
                 <div class="opinion">
                     <p class="parrafo_desc">"Los cursos de Universo Infinito son muy bien estructurados y completos. He
@@ -173,7 +142,7 @@
             </article>
 
             <article class="alum_portada">
-                <img src="./Imagenes/Carlos-Perez.jpg" alt="Rostro Alumno">
+                <img src="../static/Imagenes/Carlos-Perez.jpg" alt="Rostro Alumno">
                 <h3 class="sub_caja">Carlos Pérez</h3>
                 <div class="opinion">
                     <p class="parrafo_desc">"Siempre me ha gustado la astronomía, pero nunca había tenido la oportunidad
@@ -184,7 +153,7 @@
             </article>
 
             <article class="alum_portada">
-                <img src="./Imagenes/Marta-Rodriguez.jpg" alt="Rostro Alumno">
+                <img src="../static/Imagenes/Marta-Rodriguez.jpg" alt="Rostro Alumno">
                 <h3 class="sub_caja">Marta Rodríguez</h3>
                 <div class="opinion">
                     <p class="parrafo_desc">"Los cursos de Universo Infinito me han permitido descubrir una nueva
@@ -195,7 +164,7 @@
             </article>
 
             <article class="alum_portada">
-                <img src="./Imagenes/Laura-Gomez.jpg" alt="Rostro Alumno">
+                <img src="../static/Imagenes/Laura-Gomez.jpg" alt="Rostro Alumno">
                 <h3 class="sub_caja">Laura Gómez</h3>
                 <div class="opinion">
                     <p class="parrafo_desc">"Siempre he sido una apasionada de las estrellas, pero nunca había tenido la
@@ -206,7 +175,7 @@
             </article>
 
             <article class="alum_portada">
-                <img src="./Imagenes/David-Gonzalez.jpg" alt="Rostro Alumno">
+                <img src="../static/Imagenes/David-Gonzalez.jpg" alt="Rostro Alumno">
                 <h3 class="sub_caja">David González</h3>
                 <div class="opinion">
                     <p class="parrafo_desc">"Los cursos de Universo Infinito son muy entretenidos y educativos. He
@@ -217,47 +186,12 @@
         </section>
     </main>
 
-    <footer>
-        <div class="footer">
-            <div class="footer-section contact">
-                <h3>Contacto</h3>
-                <p>Av. Sarmiento s/n, 1425 CABA</p>
-                <a href="mailto:espacio@infinito.com.ar">espacio@infinito.com.ar</a>
-                <p>Whatsapp: (011) 4456-7890</p>
-            </div>
-            <div class="footer-section social">
-                <h3>Redes Sociales</h3>
-                <ul class="social-icons">
-                    <li><a href="https://www.facebook.com/" target="_blank"><span class="fa-brands fa-facebook"
-                                title="Facebook"></span></a></li>
-                    <li><a href="https://www.instagram.com/" target="_blank"><span class="fa-brands fa-instagram"
-                                title="Instagram"></span></a></li>
-                    <li><a href="https://www.linkedin.com/feed/" target="_blank"><span class="fa-brands fa-linkedin"
-                                title="Linkedin"></span></a></li>
-                    <li><a href="https://twitter.com/home" target="_blank"><span class="fa-brands fa-square-x-twitter"
-                                title="Twitter"></span></a></li>
-                    <li><a href="https://www.whatsapp.com/?lang=es" target="_blank"><span class="fa-brands fa-whatsapp"
-                                title="Whatsapp"></span></a></li>
-                    <li><a href="https://www.youtube.com/watch?v=4_OT4xFrjmM&ab_channel=afarTV" target="_blank"><span
-                                class="fa-brands fa-youtube" title="Youtube"></span></a></li>
-
-                </ul>
-            </div>
-            <div class="footer-section links">
-                <h3>Enlaces</h3>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="cursos.html">Cursos</a></li>
-                    <li><a href="recursos.html">Recursos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="footer-section copyright">
-                <img src="./Imagenes/Logo.png" alt="logo Univero Infinito">
-                <p>&copy; 2023 Univero Infinito: Explorando el Cosmos.</p>
-            </div>
-        </div>
+    <footer id="footer">
+        <!-- footer en js -->
     </footer>
+
+    <script src="../static/js/nav.js"></script>    
+    <script src="../static/js/footer.js"></script>
 
 </body>
 

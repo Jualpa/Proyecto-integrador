@@ -1,19 +1,25 @@
 function guardar() {
     let n = document.getElementById("nombre").value
+    let d = document.getElementById("descripcion").value
+    let ct = document.getElementById("contenido_teo").value
+    let cp = document.getElementById("contenido_pra").value
     let p = parseFloat(document.getElementById("precio").value)
-    let s = parseInt(document.getElementById("stock").value)
+    let v = parseInt(document.getElementById("vacantes").value)
     let i = document.getElementById("imagen").value
 
 
-    let producto = {
+    let curso = {
         nombre: n,
+        descripcion: d,
+        contenido_teo: ct,
+        contenido_pra: cp,
         precio: p,
-        stock: s,
+        vacantes: v,
         imagen: i
     }
-    let url = "https://jualpa.pythonanywhere.com/productos"
+    let url = "https://jualpa.pythonanywhere.com/cursos"
     var options = {
-        body: JSON.stringify(producto),
+        body: JSON.stringify(curso),
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
     }
@@ -21,7 +27,7 @@ function guardar() {
         .then(function () {
             console.log("creado")
             alert("Grabado")
-            window.location.href = "./productos.html";  
+            window.location.href = "../templates/producto.html";  
             // Handle response we get from the API
         })
         .catch(err => {

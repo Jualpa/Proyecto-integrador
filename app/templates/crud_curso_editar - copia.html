@@ -20,29 +20,37 @@
   <main>
     <div class="container">
         <form  style="background-color: aliceblue;margin:10px auto ; width: 400px; padding: 20px;">
-          <h1>Editar Producto</h1>
-          <div class="mb-3">
-            <label for="id">Id</label>
-            <input type="number" name="id" id="id" disabled>
-          </div>
-
+          <h1>Editar Curso</h1>
           <div class="mb-3">
             <label for="nombre">Nombre</label>
             <input type="text" name="nombre" id="nombre">
+          </div>
+          <div class="mb-3">
+            <label for="descripcion">Descripcion</label>
+            <!-- <input type="text" name="nombre" id="nombre"> -->
+            <textarea id="descripcion" name="descripcion" rows="4" cols="70"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="contenido_teo">Contenido Teorico</label>
+            <textarea id="contenido_teo" name="contenido_teo" rows="4" cols="70"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="contenido_pra">Contenido Practico</label>
+            <textarea id="contenido_pra" name="contenido_pra" rows="4" cols="70"></textarea>
           </div>
           <div class="mb-3">
             <label for="precio">Precio</label>
             <input type="number" name="precio" id="precio">
           </div>
           <div class="mb-3">
-            <label for="stock">Stock</label>
-            <input type="number" name="stock" id="stock">
+            <label for="vacantes">Vacantes</label>
+            <input type="number" name="vacantes" id="vacantes">
           </div>
           <div class="mb-3">
             <label for="imagen">Imagen</label>
             <input type="text" name="imagen" id="imagen">
           </div>
-         
+        
             <button type="button" class="btn btn-success" onclick="modificar()">Grabar</button>
         </form>
   
@@ -63,8 +71,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
   </script>
-  <script src="./js/main.js"></script>
-  <script src="./js/producto_editar.js"></script>
+  <script src="../static/js/main.js"></script>
+  <script src="../static/js/producto_editar.js"></script>
 </body>
 
 </html>

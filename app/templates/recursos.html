@@ -6,9 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/14624a266b.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="./Imagenes/Logo.png">
-    <link rel="stylesheet" href="./css/estilo.css">
-    <link rel="stylesheet" href="./css/recursos.css">
+    <link rel="icon" type="image/x-icon" href="../static/Imagenes/Logo.png">
+    <link rel="stylesheet" href="../static/css/estilo.css">
+    <link rel="stylesheet" href="../static/css/recursos.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap" rel="stylesheet">
 
 
@@ -16,36 +16,8 @@
 
 <body>
     <header class="inicio">
-        <nav class="menu">
-            <div class="menu_logo">
-                <img src="./Imagenes/Logo.png" alt="" class="logo_ppl">
-                <h2 class="menu_titulo">Universo Infinito: Explorando el Cosmos</h2>
-            </div>
-            <input type="checkbox" id="ver_menu_hamb" class="ver_menu_hamb">
-            <ul class="menu_link">
-                <li class="menu_items">
-                    <a href="index.html" class="menu_href">Inicio</a>
-                </li>
-                <li class="menu_items">
-                    <a href="./cursos.html" class="menu_href">Cursos</a>
-                </li>
-                <li class="menu_items">
-                    <a href="./recursos.html" class="menu_href">Recursos</a>
-                </li>
-                <li class="menu_items">
-                    <a href="./contacto.html" class="menu_href">Contacto</a>
-                </li>
-            </ul>
-            <div class="menu_hamb">
-                <label for="ver_menu_hamb">
-                    <i class="fa-solid fa-bars av_img_hamb"></i>
-                </label>
-            </div>
-            <div class="menu_cerrar">
-                <label for="ver_menu_hamb">
-                    <i class="fa-solid fa-xmark av_img_hamb"></i>
-                </label>
-            </div>
+        <nav id="nav" class="menu">
+            <!-- Nav en js -->  
         </nav>
         <section id="ir_pg_inicio" class="inicio_contenedor contenedor">
             <h1 class="frase_titulo">“El cosmos está dentro de nosotros. Estamos hechos de material estelar. Somos una
@@ -64,19 +36,19 @@
             <div class="carrucel_cont">
                 <ul>
                     <li>
-                        <img class="img_ppl" src="./Imagenes/UltraDeep.jpg" alt="Imagen del espacio">
+                        <img class="img_ppl" src="../static/Imagenes/UltraDeep.jpg" alt="Imagen del espacio">
                     </li>
                     <li>
-                        <img class="img_ppl" src="./Imagenes/Milky_Way.jpg" alt="Imagen del espacio">
+                        <img class="img_ppl" src="../static/Imagenes/Milky_Way.jpg" alt="Imagen del espacio">
                     </li>
                     <li>
-                        <img class="img_ppl" src="./Imagenes/Tierra.jpg" alt="Imagen del espacio">
+                        <img class="img_ppl" src="../static/Imagenes/Tierra.jpg" alt="Imagen del espacio">
                     </li>
                     <li>
-                        <img class="img_ppl" src="./Imagenes/Saturno2.jpg" alt="Imagen del espacio">
+                        <img class="img_ppl" src="../static/Imagenes/Saturno2.jpg" alt="Imagen del espacio">
                     </li>
                     <li>
-                        <img class="img_ppl" src="./Imagenes/Sol.jpg" alt="Imagen del espacio">
+                        <img class="img_ppl" src="../static/Imagenes/Sol.jpg" alt="Imagen del espacio">
                     </li>
 
                 </ul>
@@ -91,13 +63,13 @@
                 <div class="container">
                     <div id="ex1"></div>
                     <ul>
-                        <li><a class="boton" href="estr-brillantes.html">Listado de estrellas</a></li>
-                        <li><a class="boton" href="constelaciones.html"> Listado de constelaciones</a></li>
-                        <li><a class="boton" href="sist-solar.html">Listado del sol y los planetas</a></li>
-                        <li><a class="boton" href="planetas.html">Listado de planetas y planetas enanos</a></li>
-                        <li><a class="boton" href="meteorito.html">Listado de lluvia de meteoros</a></li>
-                        <li><a class="boton" href="universo.html">Listado del Universo a la tierra</a></li>
-                        <li><a class="boton" href="misiones.html">Listado de misiones espaciales del 2020 al
+                        <li><a class="boton" href="../templates/estr-brillantes.html">Listado de estrellas</a></li>
+                        <li><a class="boton" href="../templates/constelaciones.html"> Listado de constelaciones</a></li>
+                        <li><a class="boton" href="../templates/sist-solar.html">Listado del sol y los planetas</a></li>
+                        <li><a class="boton" href="../templates/planetas.html">Listado de planetas y planetas enanos</a></li>
+                        <li><a class="boton" href="../templates/meteorito.html">Listado de lluvia de meteoros</a></li>
+                        <li><a class="boton" href="../templates/universo.html">Listado del Universo a la tierra</a></li>
+                        <li><a class="boton" href="../templates/misiones.html">Listado de misiones espaciales del 2020 al
                                 2023</a>
                         </li>
                     </ul>
@@ -144,49 +116,14 @@
             </ul>
         </section>
     </main>
-    <footer>
-        <div class="footer">
-            <div class="footer-section contact">
-                <h3>Contacto</h3>
-                <p>Av. Sarmiento s/n, 1425 CABA</p>
-                <a href="mailto:espacio@infinito.com.ar">espacio@infinito.com.ar</a>
-                <p>Whatsapp: (011) 4456-7890</p>
-            </div>
-            <div class="footer-section social">
-                <h3>Redes Sociales</h3>
-                <ul class="social-icons">
-                    <li><a href="https://www.facebook.com/" target="_blank"><span class="fa-brands fa-facebook"
-                                title="Facebook"></span></a></li>
-                    <li><a href="https://www.instagram.com/" target="_blank"><span class="fa-brands fa-instagram"
-                                title="Instagram"></span></a></li>
-                    <li><a href="https://www.linkedin.com/feed/" target="_blank"><span class="fa-brands fa-linkedin"
-                                title="Linkedin"></span></a></li>
-                    <li><a href="https://twitter.com/home" target="_blank"><span class="fa-brands fa-square-x-twitter"
-                                title="Twitter"></span></a></li>
-                    <li><a href="https://www.whatsapp.com/?lang=es" target="_blank"><span class="fa-brands fa-whatsapp"
-                                title="Whatsapp"></span></a></li>
-                    <li><a href="https://www.youtube.com/watch?v=4_OT4xFrjmM&ab_channel=afarTV" target="_blank"><span
-                                class="fa-brands fa-youtube" title="Youtube"></span></a></li>
-
-                </ul>
-            </div>
-            <div class="footer-section links">
-                <h3>Enlaces</h3>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="cursos.html">Cursos</a></li>
-                    <li><a href="recursos.html">Recursos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="footer-section copyright">
-                <img src="./Imagenes/Logo.png" alt="logo Univero Infinito">
-                <p>&copy; 2023 Univero Infinito: Explorando el Cosmos.</p>
-            </div>
-        </div>
-
+    
+    <footer id="footer">
+        <!-- footer en js -->
     </footer>
-    <script src="./js/api_luna.js"></script>
+    <script src="../static/js/api_luna.js"></script>
+
+    <script src="../static/js/nav.js"></script>    
+    <script src="../static/js/footer.js"></script>
 </body>
 
 </html>
