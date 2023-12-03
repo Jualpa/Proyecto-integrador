@@ -9,10 +9,14 @@ function validarFormulario(guardar) {
 
     
     if (nombre === '' || descripcion === '' || contenido_teo === '' || contenido_pra === '' || precio === '' || vacantes === '' || imagen === '') {
-        alert('Por favor, complete todos los campos.');
+
+            alert('Por favor, complete todos los campos.');
         return false;
     }
-
+    if (precio <0 || vacantes<0) {
+        alert("El precio y las vacantes no pueden ser negativos");
+        return false;
+    }
     if (guardar) {
         guardar();
     }
@@ -48,7 +52,7 @@ function guardar() {
             .then(function () {
                 console.log("creado")
                 alert("Grabado")
-                window.location.href = "../templates/pp.html";  
+                window.location.href = "../templates/cursos_CRUD.html";  
                 // Handle response we get from the API
             })
             .catch(err => {

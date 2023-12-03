@@ -27,7 +27,7 @@ function guardar() {
         .then(function () {
             console.log("creado")
             alert("Grabado")
-            window.location.href = "../templates/pp.html";  
+            window.location.href = "../templates/cursos_CRUD.html";  
             // Handle response we get from the API
         })
         .catch(err => {

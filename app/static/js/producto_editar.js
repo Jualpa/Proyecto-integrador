@@ -41,11 +41,17 @@ createApp({
                 })
         },
         validarCampos() {
-            if (!this.nombre || !this.descripcion || !this.contenido_teo || !this.contenido_pra || !this.precio || !this.vacantes || !this.imagen) {
+            if (!this.nombre || !this.descripcion || !this.contenido_teo || !this.contenido_pra || !this.imagen) {
                 alert("Todos los campos son obligatorios.");
                 return false;
             }
-            return true;
+            else if (this.precio <0 || this.vacantes<0) {
+                alert("El precio y las vacantes no pueden ser negativos");
+                return false;
+            }
+            else {
+                return true;
+            }
         },
         modificar() {
             if (!this.validarCampos()) {
@@ -70,7 +76,7 @@ createApp({
             fetch(this.url, options)
                 .then(() => {
                     alert("Registro modificado")
-                    window.location.href = "../templates/pp.html";
+                    window.location.href = "../templates/cursos_CRUD.html";
                 })
                 .catch(err => {
                     console.error(err);

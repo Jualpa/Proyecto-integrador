@@ -19,7 +19,7 @@ document.getElementById("nav").innerHTML = `
         <a href="./contacto.html" class="menu_href">Contacto</a>
     </li>
     <li class="menu_items">
-        <a href="./pp.html" class="menu_href">Admin</a>
+        <a href="./cursos_CRUD.html" class="menu_href">Admin</a>
     </li>
 </ul>
 <div class="menu_hamb">
