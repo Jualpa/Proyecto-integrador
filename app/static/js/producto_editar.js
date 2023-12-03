@@ -16,6 +16,8 @@ createApp({
             vacantes: 0,
             imagen: "",
             url: 'https://jualpa.pythonanywhere.com/cursos/' + id,
+            error: false,
+            errorMessage: "",
         }
     },
     methods: {
@@ -23,24 +25,33 @@ createApp({
             fetch(url)
                 .then(response => response.json())
                 .then(data => {
-
                     console.log(data)
                     this.id = data.id
                     this.nombre = data.nombre
-                    this.descripcion= data.descripcion
+                    this.descripcion = data.descripcion
                     this.contenido_teo = data.contenido_teo
                     this.contenido_pra = data.contenido_pra
                     this.vacantes = data.vacantes
                     this.precio = data.precio
                     this.imagen = data.imagen
-                    
                 })
                 .catch(err => {
                     console.error(err);
                     this.error = true
                 })
         },
+        validarCampos() {
+            if (!this.nombre || !this.descripcion || !this.contenido_teo || !this.contenido_pra || !this.precio || !this.vacantes || !this.imagen) {
+                alert("Todos los campos son obligatorios.");
+                return false;
+            }
+            return true;
+        },
         modificar() {
+            if (!this.validarCampos()) {
+                return;
+            }
+
             let producto = {
                 nombre: this.nombre,
                 descripcion: this.descripcion,
@@ -57,7 +68,7 @@ createApp({
                 redirect: 'follow'
             }
             fetch(this.url, options)
-                .then(function () {
+                .then(() => {
                     alert("Registro modificado")
                     window.location.href = "../templates/pp.html";
                 })
