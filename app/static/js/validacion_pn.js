@@ -1,0 +1,60 @@
+function validarFormulario(guardar) {
+    var nombre = document.getElementById('nombre').value;
+    var descripcion = document.getElementById('descripcion').value;
+    var contenido_teo = document.getElementById('contenido_teo').value;
+    var contenido_pra = document.getElementById('contenido_pra').value;
+    var precio = document.getElementById('precio').value;
+    var vacantes = document.getElementById('vacantes').value;
+    var imagen = document.getElementById('imagen').value;
+
+    
+    if (nombre === '' || descripcion === '' || contenido_teo === '' || contenido_pra === '' || precio === '' || vacantes === '' || imagen === '') {
+        alert('Por favor, complete todos los campos.');
+        return false;
+    }
+
+    if (guardar) {
+        guardar();
+    }
+}
+
+function guardar() {
+    
+        let n = document.getElementById("nombre").value
+        let d = document.getElementById("descripcion").value
+        let ct = document.getElementById("contenido_teo").value
+        let cp = document.getElementById("contenido_pra").value
+        let p = parseFloat(document.getElementById("precio").value)
+        let v = parseInt(document.getElementById("vacantes").value)
+        let i = document.getElementById("imagen").value
+    
+    
+        let curso = {
+            nombre: n,
+            descripcion: d,
+            contenido_teo: ct,
+            contenido_pra: cp,
+            precio: p,
+            vacantes: v,
+            imagen: i
+        }
+        let url = "https://jualpa.pythonanywhere.com/cursos"
+        var options = {
+            body: JSON.stringify(curso),
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+        }
+        fetch(url, options)
+            .then(function () {
+                console.log("creado")
+                alert("Grabado")
+                window.location.href = "../templates/pp.html";  
+                // Handle response we get from the API
+            })
+            .catch(err => {
+                //this.errored = true
+                alert("Error al grabar" )
+                console.error(err);
+            })
+    
+}
