@@ -117,7 +117,8 @@ select{
 
 input[type="submit"],
 input[type="reset"] {
-    background-color: blue;
+    /* background-color: blue; */
+    background-color:  var(--color-botones);
     color: #fff;
     padding: 10px 20px;
     width: 102.5%;
@@ -126,10 +127,6 @@ input[type="reset"] {
     margin-top: 10px;
     box-sizing: border-box;
     /* max-width: 160%; */
-}
-
-.inicio_parrafo{
-    /* padding: 45px; */
 }
 
 .inicio_contenedor {

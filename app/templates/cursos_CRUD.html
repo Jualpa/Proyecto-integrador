@@ -25,63 +25,65 @@
         <div class="card-title">
             <h2 class="mr-lg-4 text-center card-header"><span>Cursos vigentes</span></h2>
         </div>
-        <section v-if="error">Lo sentimos se produjo un error</section>
+        <section v-if="error"><p class="m-2">Lo sentimos se produjo un error</p></section>
         <section v-else>
             <section v-if="cargando">
-                <div class="spinner-border"></div>
-                <p>Cargando .....</p>
+                <div class="spinner-borde m-2"></div>
+                <p class="m-2">Cargando .....</p>
             </section>
             <section v-else>
 
                 <a class="btn btn-success btn-primary m-2" href="curso_nuevo.html">Crear nuevo curso</a>
-                <table class="table table-bordered table-striped m-2">
-                    <thead class="table-dark">
-                        <tr>
-                            <th class="align-middle text-center">Id</th>
-                            <th class="align-middle text-center">Titulo</th>
-                            <th class="align-middle text-center max-width">Descripcion</th>
-                            <th class="align-middle text-center sortable">Contenido Teorico
-                            </th>
-                            <th class="align-middle text-center">Contenido Practico</th>
-                            <th class="align-middle text-center">Precio</th>
-                            <th class="align-middle text-center">Vacantes</th>
-                            <th class="align-middle text-center">Imagen</th>
-                            <th class="align-middle text-center ">
+                <div class="table-responsive-lg p-2">
+                    <table class="table table-bordered table-striped p-2">
+                        <thead class="table-dark">
+                            <tr>
+                                <th class="align-middle text-center">Id</th>
+                                <th class="align-middle text-center">Titulo</th>
+                                <th class="align-middle text-center max-width">Descripcion</th>
+                                <th class="align-middle text-center sortable">Contenido Teorico
+                                </th>
+                                <th class="align-middle text-center">Contenido Practico</th>
+                                <th class="align-middle text-center">Precio</th>
+                                <th class="align-middle text-center">Vacantes</th>
+                                <th class="align-middle text-center">Imagen</th>
+                                <th class="align-middle text-center ">
 
-                                <a class="btn btn-light btn-primary btn-sm pt-0 px-3 text-sm-center align-self-center justify-content-sm-center"
-                                    href="curso_nuevo.html">+</a>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr v-for="producto in productos">
-                            <td class="align-middle text-center small">{{producto.id}}</td>
-                            <td class="align-middle text-center small">{{producto.nombre}}
-                            </td>
-                            <td class="align-middle text-center small">
-                                {{producto.descripcion}}</td>
-                            <td class="align-middle text-center small">
-                                {{producto.contenido_teo}}</td>
-                            <td class="align-middle text-center small">
-                                {{producto.contenido_pra}}</td>
-                            <td class="align-middle text-center small">{{producto.precio}}
-                            </td>
-                            <td class="align-middle text-center small">{{producto.vacantes}}
-                            </td>
-                            <td class="align-middle text-center small">
-                                <img width="60" :src="producto.imagen" :alt="producto.nombre">
-                            </td>
-                            <td class="text-center align-middle">
-                                <div class="btn-group align-top">
-                                    <a class="btn btn-sm btn-outline-secondary badge-dark"
-                                        :href="'../templates/curso_editar.html?id='+producto.id">Editar</a>
-                                    <button class="btn btn-sm btn-outline-secondary badge-dark" type="button"
-                                        v-on:click="eliminar(producto.id)"><i class="fa fa-trash"></i></button>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                                    <a class="btn btn-light btn-primary btn-sm pt-0 px-3 text-sm-center align-self-center justify-content-sm-center"
+                                        href="curso_nuevo.html">+</a>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr v-for="producto in productos">
+                                <td class="align-middle text-center small">{{producto.id}}</td>
+                                <td class="align-middle text-center small">{{producto.nombre}}
+                                </td>
+                                <td class="align-middle text-center small">
+                                    {{producto.descripcion}}</td>
+                                <td class="align-middle text-center small">
+                                    {{producto.contenido_teo}}</td>
+                                <td class="align-middle text-center small">
+                                    {{producto.contenido_pra}}</td>
+                                <td class="align-middle text-center small">{{producto.precio}}
+                                </td>
+                                <td class="align-middle text-center small">{{producto.vacantes}}
+                                </td>
+                                <td class="align-middle text-center small">
+                                    <img width="60" :src="producto.imagen" :alt="producto.nombre">
+                                </td>
+                                <td class="text-center align-middle">
+                                    <div class="btn-group align-top">
+                                        <a class="btn btn-sm btn-outline-secondary badge-dark"
+                                            :href="'../templates/curso_editar.html?id='+producto.id">Editar</a>
+                                        <button class="btn btn-sm btn-outline-secondary badge-dark" type="button"
+                                            v-on:click="eliminar(producto.id)"><i class="fa fa-trash"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </section>
         </section>
     </div>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <title>Dashboard</title>
+</head>
+
+<body>
+
+    <header id="header">
+        <!-- Aqui va el heather -->
+        <nav class="navbar navbar-dark bg-dark navbar-expand-md bg-body-tertiary bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="">
+                    <img src="../static/Imagenes/Logo.png" alt="Logo" width="30" height="24"
+                        class="d-inline-block align-text-top">
+                    Universo Infinito: Dashboard
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">ir a Web</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-sm btn-primary mt-1 ms-4 disabled" href="cursos_CRUD.html" dis>Volver a Dashboard</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </nav>
+    </header>
+
+
+
+    <div class="justify-content-center" >
+        <div id="app" class="card mx-5 d-flex my-4 align-self-center">
+            <div>
+                <h4 class="text-center card-title card-header">Acceso a Dashboard</h4>
+            </div>
+            <div class="m-3 p-3 jus">
+
+                <h5 class="mb-3 align-self-center">Complete sus datos de acceso</h5>
+                <div class="mb-3 mt-5">
+                    <label for="email" class="form-label">Direccion de eMail</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="password" placeholder="Contraseña">
+                </div>
+
+            </div>
+            <button class="btn btn-primary w-50 mb-3 m-auto" onclick="validarIngreso()">Ingresar</button>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <script src="../static/js/validacion.js"></script>
+
+</body>
+
+</html>

@@ -6,6 +6,8 @@
     --padding-cont: 10px 0;
     --color-titulos: #001a49;
     --size-imagen: 400px;
+    --color-botones: rgb(0, 191, 255);
+    --color-hover: gold;
 }
 
 
@@ -21,6 +23,7 @@ html {
 .subtitulo {
     font-size: 2rem;
     text-align: center;
+    
 
 }
 
@@ -271,7 +274,8 @@ html {
 }
 
 .accionar a {
-    background-color: blue;
+    /* background-color: blue; */
+    background-color:  var(--color-botones);
     border-radius: 5px;
     padding: 12px 8px;
     color: white;
@@ -280,7 +284,7 @@ html {
 }
 
 .accionar a:hover {
-    color: gold;
+    color: var(--color-hover);
 }
 
 
@@ -332,7 +336,7 @@ html {
 .boton {
     width: 90%;
     display: inline-block;
-    background-color: blue;
+    background-color: var(--color-botones);
     justify-self: center;
     color: white;
     text-decoration: none;

@@ -1,23 +1,26 @@
 document.getElementById("header").innerHTML = `
 
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <div class="container-fluid align-items-lg-start">
-    <a class="navbar-brand" href="../templates/cursos_CRUD.html">
-      <img src="../static/imagenes/logo.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
+<nav class="navbar navbar-dark bg-dark navbar-expand-md bg-body-tertiary bg-light">
+<div class="container-fluid">
+    <a class="navbar-brand" href="cursos_CRUD.html">
+        <img src="../static/Imagenes/Logo.png" alt="Logo" width="30" height="24"
+            class="d-inline-block align-text-top">
+        Universo Infinito: Dashboard
     </a>
-  </div>
-  <div class="container-fluid">
-    <span class="navbar-text">Espacio Infinito - Dashboard</span>
-  </div>
-  <div class="container-fluid">
-  <ul class="navbar-nav">
-   <li class="nav-item">
-      <a class="nav-link" href="../templates/cursos_CRUD.html">Dashboard</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="../templates/index.html">Ir a web</a>
-    </li>
-  </ul>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">ir a Web</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-sm btn-primary mt-1 ms-4" href="cursos_CRUD.html">Volver a Dashboard</a>
+            </li>
+        </ul>
+    </div>
 </div>
 </nav>
 
