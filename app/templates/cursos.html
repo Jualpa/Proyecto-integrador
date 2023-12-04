@@ -44,18 +44,8 @@
                         vanguardia. Perfecto para aficionados y principiantes. ¡Únete a nosotros y comienza tu viaje
                         estelar
                         hoy!</p>
-                    <div class="projects__grid">
-                        <article class="projects__Item">
-                            <a href="#curso_Asto_Obs">
-                                <img src="../static/Imagenes/curso1.2.jpeg" class="projects__img" alt="Curso 1">
-                                <div class="projects__hover">
-                                    <h2 class="projects__title">Curso de Astronomía Observacional</h2>
-                                    <p class="projects__desc">Aprende los fundamentos de la astronomía y explora el
-                                        sistema
-                                        solar.</p>
-                                </div>
-                            </a>
-                        </article>
+                    <div class="projects__grid container">
+
                         <article class="projects__Item">
                             <a href="#curso_Astro_Gen">
                                 <img src="../static/Imagenes/Planetas.jpeg" class="projects__img" alt="Curso 2">
@@ -63,6 +53,18 @@
                                     <h2 class="projects__title">Curso de Astronomía General</h2>
                                     <p class="projects__desc">Profundiza en los conceptos complejos del universo y la
                                         astrofísica.</p>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="projects__Item">
+                            <a href="#curso_Estruc_Cosmic">
+                                <img src="../static/Imagenes/estrcuturas cosmicas.jpeg" class="projects__img"
+                                    alt="Curso 3">
+                                <div class="projects__hover">
+                                    <h2 class="projects__title">Curso de estructuras cósmicas</h2>
+                                    <p class="projects__desc">Explora la estructura y evolución del universo en escalas
+                                        cósmicas.
+                                    </p>
                                 </div>
                             </a>
                         </article>
@@ -90,24 +92,12 @@
                                 </div>
                             </a>
                         </article>
-                        <article class="projects__Item">
-                            <a href="#curso_esc_dist">
-                                <img src="../static/Imagenes/curso 4jpeg.jpeg" class="projects__img" alt="Curso 4">
-                                <div class="projects__hover">
-                                    <h2 class="projects__title">Curso de escalera de las distancias</h2>
-                                    <p class="projects__desc">Aprende técnicas y herramientas para la observación del
-                                        cielo
-                                        nocturno.</p>
-
-                                </div>
-                            </a>
-                        </article>
                         <article v-for="producto in productos" class="projects__Item">
-                            <a :href="producto.nombre">
+                            <a :href="'#'+producto.nombre">
                                 <img class="projects__img" :src="producto.imagen"  :alt="producto.nombre" >
                                 <div class="projects__hover">
                                     <h2 class="projects__title">{{producto.nombre}}</h2>
-                                    <p class="projects__desc">{{producto.descripcion}}</p>
+                                    <p class="projects__desc" v-html="producto.descripcion"></p>
                                 </div>
                             </a>
                         </article>
@@ -132,21 +122,21 @@
                         <!-- fin de estrellas -->
                     </div>
                     <p>Costo: ${{producto.precio}}</p>
-                    <p>{{producto.descripcion}}</p>
+                    <p v-html="producto.descripcion"></p>
                     <button class="btn-agotado">Vacantes {{producto.vacantes}}</button>
                 </div>
                 <div class="curso-detalles">
                     <div class="detalle">
                         <h3>El mejor {{producto.nombre}}</h3>
-                        <p>{{producto.descripcion}}</p>
+                        <p v-html="producto.descripcion"></p>
                     </div>
                     <div class="detalle">
                         <h3>Contenido teórico del curso</h3>
-                        <p>{{producto.contenido_teo}}</p>
+                        <p v-html="producto.contenido_teo"></p>
                     </div>
                     <div class="detalle">
                         <h3>Contenido práctico del curso</h3>
-                        <p>{{producto.contenido_pra}}</p>
+                        <p v-html="producto.contenido_pra"></p>
                     </div>
                 </div>
             </section>

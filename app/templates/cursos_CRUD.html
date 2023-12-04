@@ -25,11 +25,11 @@
         <div class="card-title">
             <h2 class="mr-lg-4 text-center card-header"><span>Cursos vigentes</span></h2>
         </div>
-        <section v-if="error"><p class="m-2">Lo sentimos se produjo un error</p></section>
+        <section v-if="error"><p class="m-2">Lo sentimos se produjo un error, aguarde un momento y actualice...</p></section>
         <section v-else>
             <section v-if="cargando">
                 <div class="spinner-borde m-2"></div>
-                <p class="m-2">Cargando .....</p>
+                <p class="m-2">Cargando, aguarde un momento por favor ...</p>
             </section>
             <section v-else>
 
@@ -57,18 +57,12 @@
                         <tbody>
                             <tr v-for="producto in productos">
                                 <td class="align-middle text-center small">{{producto.id}}</td>
-                                <td class="align-middle text-center small">{{producto.nombre}}
-                                </td>
-                                <td class="align-middle text-center small">
-                                    {{producto.descripcion}}</td>
-                                <td class="align-middle text-center small">
-                                    {{producto.contenido_teo}}</td>
-                                <td class="align-middle text-center small">
-                                    {{producto.contenido_pra}}</td>
-                                <td class="align-middle text-center small">{{producto.precio}}
-                                </td>
-                                <td class="align-middle text-center small">{{producto.vacantes}}
-                                </td>
+                                <td class="align-middle text-center small">{{producto.nombre}}</td>
+                                <td class="align-middle text-center small" v-html="producto.descripcion"></td>
+                                <td class="align-middle text-center small" v-html="producto.contenido_teo"></td>
+                                <td class="align-middle text-center small" v-html="producto.contenido_pra"></td>
+                                <td class="align-middle text-center small">{{producto.precio}}</td>
+                                <td class="align-middle text-center small">{{producto.vacantes}}</td>
                                 <td class="align-middle text-center small">
                                     <img width="60" :src="producto.imagen" :alt="producto.nombre">
                                 </td>

@@ -18,8 +18,8 @@ document.getElementById("nav").innerHTML = `
     <li class="menu_items">
         <a href="./contacto.html" class="menu_href">Contacto</a>
     </li>
-    <li class="menu_items ingreso">
-        <a href="./curso_registro.html" class="menu_href">Ingresar</a>
+    <li class="menu_items ">
+        <a class="ingreso" href="./curso_registro.html" class="menu_href">INGRESAR</a>
     </li>
 </ul>
 <div class="menu_hamb">

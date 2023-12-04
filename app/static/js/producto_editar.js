@@ -4,6 +4,15 @@ console.log(id)
 
 const { createApp } = Vue
 
+function agregarSalto(cadena){
+    return cadena.replaceAll('<br>','\n');
+
+}
+
+function agregarBr(cadena){
+    return cadena.replace(/\n/g,'<br>');
+}
+
 createApp({
     data() {
         return {
@@ -28,9 +37,9 @@ createApp({
                     console.log(data)
                     this.id = data.id
                     this.nombre = data.nombre
-                    this.descripcion = data.descripcion
-                    this.contenido_teo = data.contenido_teo
-                    this.contenido_pra = data.contenido_pra
+                    this.descripcion = agregarSalto(data.descripcion)
+                    this.contenido_teo = agregarSalto(data.contenido_teo)
+                    this.contenido_pra = agregarSalto(data.contenido_pra)
                     this.vacantes = data.vacantes
                     this.precio = data.precio
                     this.imagen = data.imagen
@@ -60,9 +69,9 @@ createApp({
 
             let producto = {
                 nombre: this.nombre,
-                descripcion: this.descripcion,
-                contenido_teo: this.contenido_teo,
-                contenido_pra: this.contenido_pra,
+                descripcion: agregarBr(this.descripcion),
+                contenido_teo: agregarBr(this.contenido_teo),
+                contenido_pra: agregarBr(this.contenido_pra),
                 vacantes: this.vacantes,
                 precio: this.precio,
                 imagen: this.imagen

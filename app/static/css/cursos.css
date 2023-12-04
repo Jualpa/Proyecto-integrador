@@ -1,7 +1,6 @@
 /* Estilos para los cursos */
 
 .container {
-    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 
@@ -18,30 +17,28 @@
 /* Estilos para los cursos */
 
 .projects__grid {
-    display: grid;
-    height: 550px;
-    grid-template-areas: "img1 img2 img3 img4"
-    ;
-    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding-bottom: 50px;
 }
 
 .projects__Item {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 28vw;
+    height: 25vw;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .projects__img {
-    max-width: 100%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
     cursor: pointer;
 }
-
 
 .projects__hover {
     position: absolute;
@@ -59,13 +56,12 @@
     color: #fff;
     transition: opacity 0.3s ease;
     cursor: pointer;
-
-
 }
 
 .projects__desc {
     opacity: 1;
     transition: opacity 0.3s ease;
+    margin: .5rem;
 }
 
 .projects__desc:hover {
@@ -78,37 +74,12 @@
     margin-bottom: 1px;
     text-align: center;
     justify-content: center;
+    
 }
 
 .projects__icon {
     font-size: 1em;
 }
-
-.curso-detalles h3 {
-    text-align: center;
-}
-
-/*-------responsive desings---------------*/
-@media screen and (max-width: 767px) {
-    .projects__grid {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .projects__Item {
-        width: 100%;
-    }
-
-    .projects__img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
-}
-
-
-/*-------responsive imagenes---------------*/
 
 
 
@@ -124,27 +95,25 @@
 
 /* hasta aca */
 
-
 .curso {
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
     background-color: #fff;
     border: 1px solid #cfc0c0;
     padding: 2%;
-    /* Usa porcentajes para el espacio interior */
     margin: 2%;
-    /* Usa porcentajes para el espacio exterior */
     border-radius: 8px;
 }
 
 .curso-info {
-    max-width: 50%;
-    /* Usa porcentajes para el ancho máximo */
+    max-width: 35vw;
     text-align: center;
+    margin: auto;
+    align-content: center;
 }
 
 .curso-info img {
-    max-width: 100%;
+    width: 300px;
     border-radius: 8px;
     margin-bottom: 10px;
 }
@@ -152,6 +121,8 @@
 .curso-info h2 {
     font-size: 1.5em;
     margin: 10px 0;
+    
+    
 }
 
 .valoracion {
@@ -172,33 +143,34 @@
 }
 
 .curso-detalles {
-    flex-grow: 1;
-    margin-left: 20px;
+    min-width: 300px;
+    margin: auto;
+    justify-content: center;
+}
+
+.curso-detalles h3 {
+    text-align: center;
 }
 
 .detalle {
+    
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .detalle h3 {
     font-size: 1.2em;
     margin-bottom: 10px;
+    text-decoration: underline;
 }
 
 /*-----curso----------------*/
-@media (max-width: 768px) {
+@media (max-width: 1040px) {
     .curso {
         flex-direction: column;
-        /* Cambia la dirección de flex a columna */
-    }
-
-    .curso-info,
-    .curso-detalles {
-        max-width: 100%;
-        /* Usa el ancho máximo en pantallas más pequeñas */
+        margin: auto;
     }
 }
-
 
 /*-----estrellas de valoracion----------------*/
 .valoracion {
@@ -216,34 +188,20 @@
     margin-left: 5px;
 }
 
-/*-----curso----------------*/
-@media (max-width: 768px) {
-    .curso {
-        flex-direction: column;
-        /* Cambia la dirección de flex a columna */
-    }
-
-    .curso-info,
-    .curso-detalles {
-        max-width: 100%;
-        /* Usa el ancho máximo en pantallas más pequeñas */
-    }
-}
 
 /* Seccion Cursos inicio  */
 
-
 .cursos {
-    --padding-cont: 0;
+    /* --padding-cont: 0; */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     text-align: center;
 
 }
 
 .tarjeta {
-    width: calc(33.33% - 20px);
+    /* width: calc(33.33% - 20px); */
     margin: 50px 30px;
     padding: 20px;
     border: 1px solid #ccc;
@@ -251,11 +209,6 @@
     background-color: #f3f3f3;
 }
 
-.curso_info img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
 
 .boton {
     display: inline-block;

@@ -30,6 +30,7 @@ html {
 .titulo {
     font-size: 3rem;
     text-align: center;
+    margin: auto;
 }
 
 
@@ -156,6 +157,12 @@ html {
     position: absolute;
     right: 1rem;
     display: none;
+}
+
+.ingreso {
+    color: var(--color-botones) !important;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .inicio_contenedor {
@@ -376,7 +383,6 @@ html {
     position: relative;
     justify-items: center;
     border-radius: 25px;
-
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
 }
 

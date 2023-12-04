@@ -14,7 +14,7 @@ document.getElementById("header").innerHTML = `
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="index.html">ir a Web</a>
+                <a class="nav-link" href="index.html">Acceder a Web</a>
             </li>
             <li class="nav-item">
                 <a class="btn btn-sm btn-primary mt-1 ms-4" href="cursos_CRUD.html">Volver a Dashboard</a>

@@ -22,6 +22,10 @@ function validarFormulario(guardar) {
     }
 }
 
+function agregarBr(cadena){
+    return cadena.replaceAll(/\n/g,'<br>');
+}
+
 function guardar() {
     
         let n = document.getElementById("nombre").value
@@ -35,9 +39,9 @@ function guardar() {
     
         let curso = {
             nombre: n,
-            descripcion: d,
-            contenido_teo: ct,
-            contenido_pra: cp,
+            descripcion: agregarBr(d),
+            contenido_teo: agregarBr(ct),
+            contenido_pra: agregarBr(cp),
             precio: p,
             vacantes: v,
             imagen: i
