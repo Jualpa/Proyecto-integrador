@@ -45,53 +45,6 @@
                         estelar
                         hoy!</p>
                     <div class="projects__grid container">
-
-                        <article class="projects__Item">
-                            <a href="#curso_Astro_Gen">
-                                <img src="../static/Imagenes/Planetas.jpeg" class="projects__img" alt="Curso 2">
-                                <div class="projects__hover">
-                                    <h2 class="projects__title">Curso de Astronomía General</h2>
-                                    <p class="projects__desc">Profundiza en los conceptos complejos del universo y la
-                                        astrofísica.</p>
-                                </div>
-                            </a>
-                        </article>
-                        <article class="projects__Item">
-                            <a href="#curso_Estruc_Cosmic">
-                                <img src="../static/Imagenes/estrcuturas cosmicas.jpeg" class="projects__img"
-                                    alt="Curso 3">
-                                <div class="projects__hover">
-                                    <h2 class="projects__title">Curso de estructuras cósmicas</h2>
-                                    <p class="projects__desc">Explora la estructura y evolución del universo en escalas
-                                        cósmicas.
-                                    </p>
-                                </div>
-                            </a>
-                        </article>
-                        <article class="projects__Item">
-                            <a href="#curso_Estruc_Cosmic">
-                                <img src="../static/Imagenes/estrcuturas cosmicas.jpeg" class="projects__img"
-                                    alt="Curso 3">
-                                <div class="projects__hover">
-                                    <h2 class="projects__title">Curso de estructuras cósmicas</h2>
-                                    <p class="projects__desc">Explora la estructura y evolución del universo en escalas
-                                        cósmicas.
-                                    </p>
-                                </div>
-                            </a>
-                        </article>
-                        <article class="projects__Item">
-                            <a href="#curso_esc_dist">
-                                <img src="../static/Imagenes/curso 4jpeg.jpeg" class="projects__img" alt="Curso 4">
-                                <div class="projects__hover">
-                                    <h2 class="projects__title">Curso de escalera de las distancias</h2>
-                                    <p class="projects__desc">Aprende técnicas y herramientas para la observación del
-                                        cielo
-                                        nocturno.</p>
-
-                                </div>
-                            </a>
-                        </article>
                         <article v-for="producto in productos" class="projects__Item">
                             <a :href="'#'+producto.nombre">
                                 <img class="projects__img" :src="producto.imagen"  :alt="producto.nombre" >
