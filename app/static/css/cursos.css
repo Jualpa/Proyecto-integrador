@@ -96,32 +96,34 @@
 /* hasta aca */
 
 .curso {
-    display: flex;
-    justify-content:center;
+    display: grid;
+    /* flex-wrap: wrap; */
+    /* justify-content:space-evenly; */
+    grid-template: "a a";
     background-color: #fff;
     border: 1px solid #cfc0c0;
-    padding: 2%;
-    margin: 2%;
+    padding: 20px;
+    margin: 20px;
     border-radius: 8px;
 }
 
 .curso-info {
-    max-width: 35vw;
+    width: 350px;
     text-align: center;
     margin: auto;
+    /* margin-left: 20px; */
     align-content: center;
 }
 
 .curso-info img {
     width: 300px;
+    margin: 10px -100px;
     border-radius: 8px;
-    margin-bottom: 10px;
 }
 
 .curso-info h2 {
     font-size: 1.5em;
     margin: 10px 0;
-    
     
 }
 
@@ -143,8 +145,8 @@
 }
 
 .curso-detalles {
-    min-width: 300px;
-    margin: auto 25px;
+    /* width: ; */
+    margin: auto;
     justify-content: center;
 }
 
@@ -153,8 +155,7 @@
 }
 
 .detalle {
-    
-    margin-bottom: 20px;
+    margin: 20px auto;
     text-align: center;
 }
 
@@ -164,13 +165,17 @@
     text-decoration: underline;
 }
 
-/*-----curso----------------*/
-@media (max-width: 1040px) {
+/* --------------curso---------------- */
+@media screen and (max-width: 900px) {
     .curso {
+        display: flex;
         flex-direction: column;
-        margin: auto;
+        /* gap: 10px; */
     }
+
 }
+
+
 
 /*-----estrellas de valoracion----------------*/
 .valoracion {
@@ -192,7 +197,6 @@
 /* Seccion Cursos inicio  */
 
 .cursos {
-    /* --padding-cont: 0; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -201,7 +205,6 @@
 }
 
 .tarjeta {
-    /* width: calc(33.33% - 20px); */
     margin: 50px 30px;
     padding: 20px;
     border: 1px solid #ccc;
