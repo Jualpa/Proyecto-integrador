@@ -81,24 +81,12 @@
     font-size: 1em;
 }
 
-
-
 /*------------Aca finalza pruebas cursos-------------------*/
 /* probando adcionar en seccion cursos  */
 
-.estado {
-    display: inline-block;
-    background-color: #ccc;
-    padding: 10px 20px;
-    border-radius: 30px;
-}
-
-/* hasta aca */
 
 .curso {
     display: grid;
-    /* flex-wrap: wrap; */
-    /* justify-content:space-evenly; */
     grid-template: "a a";
     background-color: #fff;
     border: 1px solid #cfc0c0;
@@ -110,8 +98,7 @@
 .curso-info {
     width: 350px;
     text-align: center;
-    margin: auto;
-    /* margin-left: 20px; */
+    margin: auto 25px;
     align-content: center;
 }
 
@@ -145,7 +132,6 @@
 }
 
 .curso-detalles {
-    /* width: ; */
     margin: auto;
     justify-content: center;
 }
@@ -166,15 +152,17 @@
 }
 
 /* --------------curso---------------- */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     .curso {
         display: flex;
         flex-direction: column;
-        /* gap: 10px; */
+    }
+
+    .curso-info {
+        margin: auto;
     }
 
 }
-
 
 
 /*-----estrellas de valoracion----------------*/

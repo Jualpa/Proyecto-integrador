@@ -4,7 +4,7 @@ createApp({
     data() {
         return {
             url: "https://jualpa.pythonanywhere.com/cursos",
-            productos: [],
+            cursos: [],
             error: false,
             cargando: true
         }
@@ -17,7 +17,7 @@ createApp({
             fetch(url)
                 .then(response => response.json())
                 .then(data => {
-                    this.productos = data;
+                    this.cursos = data;
                     this.cargando = false
                 })
                 .catch(err => {
@@ -26,8 +26,8 @@ createApp({
                 })
 
         },
-        eliminar(producto) {
-            const url = 'https://jualpa.pythonanywhere.com/cursos/' + producto;
+        eliminar(curso) {
+            const url = 'https://jualpa.pythonanywhere.com/cursos/' + curso;
             var options = {
                 method: 'DELETE',
             }

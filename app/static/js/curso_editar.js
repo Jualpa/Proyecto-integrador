@@ -67,7 +67,7 @@ createApp({
                 return;
             }
 
-            let producto = {
+            let curso = {
                 nombre: this.nombre,
                 descripcion: agregarBr(this.descripcion),
                 contenido_teo: agregarBr(this.contenido_teo),
@@ -77,7 +77,7 @@ createApp({
                 imagen: this.imagen
             }
             var options = {
-                body: JSON.stringify(producto),
+                body: JSON.stringify(curso),
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/json' },
                 redirect: 'follow'

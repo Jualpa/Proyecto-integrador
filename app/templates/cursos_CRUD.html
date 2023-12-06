@@ -54,23 +54,23 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr v-for="producto in productos">
-                                <td class="align-middle text-center small">{{producto.id}}</td>
-                                <td class="align-middle text-center small">{{producto.nombre}}</td>
-                                <td class="align-middle text-center small" v-html="producto.descripcion"></td>
-                                <td class="align-middle text-center small" v-html="producto.contenido_teo"></td>
-                                <td class="align-middle text-center small" v-html="producto.contenido_pra"></td>
-                                <td class="align-middle text-center small">{{producto.precio}}</td>
-                                <td class="align-middle text-center small">{{producto.vacantes}}</td>
+                            <tr v-for="curso in cursos">
+                                <td class="align-middle text-center small">{{curso.id}}</td>
+                                <td class="align-middle text-center small">{{curso.nombre}}</td>
+                                <td class="align-middle text-center small" v-html="curso.descripcion"></td>
+                                <td class="align-middle text-center small" v-html="curso.contenido_teo"></td>
+                                <td class="align-middle text-center small" v-html="curso.contenido_pra"></td>
+                                <td class="align-middle text-center small">{{curso.precio}}</td>
+                                <td class="align-middle text-center small">{{curso.vacantes}}</td>
                                 <td class="align-middle text-center small">
-                                    <img width="60" :src="producto.imagen" :alt="producto.nombre">
+                                    <img width="60" :src="curso.imagen" :alt="curso.nombre">
                                 </td>
                                 <td class="text-center align-middle">
                                     <div class="btn-group align-top">
                                         <a class="btn btn-sm btn-outline-secondary badge-dark"
-                                            :href="'../templates/curso_editar.html?id='+producto.id">Editar</a>
+                                            :href="'../templates/curso_editar.html?id='+curso.id">Editar</a>
                                         <button class="btn btn-sm btn-outline-secondary badge-dark" type="button"
-                                            v-on:click="eliminar(producto.id)"><i class="fa fa-trash"></i></button>
+                                            v-on:click="eliminar(curso.id)"><i class="fa fa-trash"></i></button>
                                     </div>
                                 </td>
                             </tr>
@@ -90,7 +90,7 @@
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
-    <script src="../static/js/productos.js"></script>
+    <script src="../static/js/cursos.js"></script>
 
 </body>
 

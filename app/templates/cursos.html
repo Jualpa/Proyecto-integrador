@@ -45,12 +45,12 @@
                         estelar
                         hoy!</p>
                     <div class="projects__grid container">
-                        <article v-for="producto in productos" class="projects__Item">
-                            <a :href="'#'+producto.nombre">
-                                <img class="projects__img" :src="producto.imagen"  :alt="producto.nombre" >
+                        <article v-for="curso in cursos" class="projects__Item">
+                            <a :href="'#'+curso.nombre">
+                                <img class="projects__img" :src="curso.imagen"  :alt="curso.nombre" >
                                 <div class="projects__hover">
-                                    <h2 class="projects__title">{{producto.nombre}}</h2>
-                                    <p class="projects__desc" v-html="producto.descripcion"></p>
+                                    <h2 class="projects__title">{{curso.nombre}}</h2>
+                                    <p class="projects__desc" v-html="curso.descripcion"></p>
                                 </div>
                             </a>
                         </article>
@@ -58,10 +58,10 @@
                 </div>
             </section>
 
-            <section v-for="producto in productos" class="curso">
-                <div class="curso-info" :id="producto.nombre">
-                    <img :src="producto.imagen" :alt="producto.nombre">
-                    <h2>{{producto.nombre}}</h2>
+            <section v-for="curso in cursos" class="curso">
+                <div class="curso-info" :id="curso.nombre">
+                    <img :src="curso.imagen" :alt="curso.nombre">
+                    <h2>{{curso.nombre}}</h2>
                     <div class="valoracion">
                         <!-- valoración -->
                         <div class="valoracion">
@@ -74,22 +74,22 @@
                         </div>
                         <!-- fin de estrellas -->
                     </div>
-                    <p>Costo: ${{producto.precio}}</p>
-                    <p v-html="producto.descripcion"></p>
-                    <button class="btn-agotado">Vacantes {{producto.vacantes}}</button>
+                    <p>Costo: ${{curso.precio}}</p>
+                    <p v-html="curso.descripcion"></p>
+                    <button class="btn-agotado">Vacantes {{curso.vacantes}}</button>
                 </div>
                 <div class="curso-detalles">
                     <div class="detalle">
-                        <h3>El mejor {{producto.nombre}}</h3>
-                        <p v-html="producto.descripcion"></p>
+                        <h3>El mejor {{curso.nombre}}</h3>
+                        <p v-html="curso.descripcion"></p>
                     </div>
                     <div class="detalle">
                         <h3>Contenido teórico del curso</h3>
-                        <p v-html="producto.contenido_teo"></p>
+                        <p v-html="curso.contenido_teo"></p>
                     </div>
                     <div class="detalle">
                         <h3>Contenido práctico del curso</h3>
-                        <p v-html="producto.contenido_pra"></p>
+                        <p v-html="curso.contenido_pra"></p>
                     </div>
                 </div>
             </section>
@@ -112,7 +112,7 @@
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
-    <script src="../static/js/productos.js"></script>
+    <script src="../static/js/cursos.js"></script>
 
 
 </body>
